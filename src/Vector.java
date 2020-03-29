@@ -1,5 +1,3 @@
-import java.lang.Math.*;
-
 public class Vector {
 
     private double[] vector;
@@ -11,7 +9,7 @@ public class Vector {
     }
 
     public Vector(int num) {
-        this.vector = null;
+        this.vector = new double[num];
         this.dim = num;
     }
 

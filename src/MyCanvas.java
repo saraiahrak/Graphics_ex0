@@ -2,8 +2,6 @@ import java.awt.Canvas;
 import java.awt.Graphics;
 import java.awt.Point;
 import java.awt.event.*;
-import java.util.List;
-import java.util.ArrayList;
 
 class MyCanvas extends Canvas implements MouseListener, MouseMotionListener {
     /**
@@ -21,7 +19,6 @@ class MyCanvas extends Canvas implements MouseListener, MouseMotionListener {
     private Point pStart, pEnd;
     private Vector vStart, vEnd;
     private boolean bFlag = false;
-    private boolean pFlag = true;
     private Boolean cFlag = false;
     private double vHeight;
     private double vWidth;
@@ -48,30 +45,14 @@ class MyCanvas extends Canvas implements MouseListener, MouseMotionListener {
         double wWidth = this.view.getSizeX() - 40;
         double wHeight = this.view.getSizeY() - 40;
         Matrix s = transformation.scale(this.vWidth/wWidth, -this.vHeight/wHeight);
-        Matrix t2 = transformation.translate((double) this.vWidth / 2 + 20, (double) this.vHeight / 2 + 20);
+        Matrix t2 = transformation.translate(this.vWidth / 2 + 20, this.vHeight / 2 + 20);
         this.VM = t2.mult(s).mult(r).mult(t1);
 
-        if (this.pFlag) {
-            //draw the view window boundaries
-            g.drawRect(20, 20, (int)wWidth, (int)wHeight);
-            this.paint.paint(g, this.updateVertexList(this.scene.getVertexList(), this.VM), this.cFlag);
-            this.pFlag = false;
-        } else {
-            //draw the view window boundaries
-            g.drawRect(20, 20, (int)wWidth, (int)wHeight);
-            this.paint.paint(g, this.updateVertexList(this.scene.getVertexList(), this.TT), this.cFlag);
-        }
-    }
+        this.TT = this.CT.mult(this.AT).mult(this.VM);
 
-    public List<Vector> updateVertexList(List<Vector> vertex, Matrix TT){
-        List<Vector> newVertexList = new ArrayList<>();
-        int vertexNum = vertex.size();
-        int i = 0;
-        while (i < vertexNum) {
-            newVertexList.add(TT.mult(vertex.get(i)));
-            i++;
-        }
-        return newVertexList;
+        //draw the view window boundaries
+        g.drawRect(20, 20, (int)wWidth, (int)wHeight);
+        this.paint.paint(g, this.TT.updateVertexList(this.scene.getVertexList()), this.cFlag);
     }
 
     public String findLocation(double x, double y) {
@@ -109,7 +90,7 @@ class MyCanvas extends Canvas implements MouseListener, MouseMotionListener {
 
     public void mouseReleased(MouseEvent arg0) {
         // TODO Auto-generated method stub
-        pEnd = arg0.getPoint();
+        this.pEnd = arg0.getPoint();
         //convert the point to vector
         this.vEnd = new Vector(new double[]{this.pEnd.getX(), this.pEnd.getY(), 1}, 3);
         this.bFlag = true;
@@ -119,23 +100,24 @@ class MyCanvas extends Canvas implements MouseListener, MouseMotionListener {
     }
 
     public void mouseDragged(MouseEvent arg0) {
-        pEnd = arg0.getPoint();
+        this.pEnd = arg0.getPoint();
         //convert the point to vector
         this.vEnd = new Vector(new double[]{this.pEnd.getX(), this.pEnd.getY(), 1}, 3);
         this.bFlag = true;
-        this.transformation.setType(findLocation(pEnd.getX(), pEnd.getY()));
+        this.transformation.setType(findLocation(pStart.getX(), pStart.getY()));
 
         if (this.transformation.getType().equals("translate")) {
             this.CT = transformation.translate(pEnd.getX() - pStart.getX(),pEnd.getY() - pStart.getY());
         } else {
             Matrix t1 = transformation.translate(this.view.getOrigin().getX(), this.view.getOrigin().getY());
-            Matrix t2 = transformation.translate(-this.view.getOrigin().getX(),
-                    -this.view.getOrigin().getY());
+            Matrix t2 = transformation.translate(-this.view.getOrigin().getX(), -this.view.getOrigin().getY());
+            Vector dv = this.vEnd.sub(this.view.getOrigin());
+            Vector sv = this.vStart.sub(this.view.getOrigin());
 
             if (this.transformation.getType().equals("scale")) {
                 //calculate the scale factor
-                double da = (this.vEnd.sub(this.view.getOrigin())).getSize();
-                double sa = (this.vStart.sub(this.view.getOrigin())).getSize();
+                double da = dv.getSize();
+                double sa = sv.getSize();
                 double sFactor = (da / sa);
 
                 Matrix scale = this.transformation.scale(sFactor, sFactor);
@@ -143,17 +125,15 @@ class MyCanvas extends Canvas implements MouseListener, MouseMotionListener {
                 this.CT = t1.mult(scale).mult(t2);
             } else {
                 //the transformation type is "rotate"
-                Vector dv = this.vEnd.sub(this.view.getOrigin());
-                Vector sv = this.vStart.sub(this.view.getOrigin());
-                double angle = dv.getTheta(sv);
-                Matrix rotate = this.transformation.rotate(angle);
+                Vector xAxis = new Vector(new double[]{1, 0, 0}, 3);
+                double dThetha = dv.getTheta(xAxis);
+                double sThetha = sv.getTheta(xAxis);
+                Matrix rotate = this.transformation.rotate(dThetha - sThetha);
 
                 //update the current matrix
                 this.CT = t1.mult(rotate).mult(t2);
             }
         }
-        this.TT = this.CT.mult(this.AT).mult(this.VM);
-        this.scene.setVertexList(this.TT);
         this.repaint();
     }
 
@@ -178,5 +158,4 @@ class MyCanvas extends Canvas implements MouseListener, MouseMotionListener {
             this.repaint();
         }
     }
-
 }

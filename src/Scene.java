@@ -52,11 +52,5 @@ public class Scene {
     public List<Vector> getVertexList() {
         return this.vertexList;
     }
-
-    public void setVertexList(Matrix tt) {
-        List<Vector> newList = new ArrayList<>();
-        for (int i = 0; i < this.vertexList.size(); i++) {
-            newList.set(i, tt.mult(this.vertexList.get(i)));
-        }
-    }
+    
 }

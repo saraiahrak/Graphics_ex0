@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Matrix {
 
     private int rows;
@@ -126,5 +129,16 @@ public class Matrix {
 
     public void set(int row, int col, double num) {
         this.matrix[row][col] = num;
+    }
+
+
+    public List<Vector> updateVertexList(List<Vector> vertexList){
+        List<Vector> newVertexList = new ArrayList<>();
+        int i = 0;
+        while (i < vertexList.size()) {
+            newVertexList.add(this.mult(vertexList.get(i)));
+            i++;
+        }
+        return newVertexList;
     }
 }
