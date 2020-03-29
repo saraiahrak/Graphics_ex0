@@ -9,8 +9,7 @@ public class Main {
     public static void main(String[] args) {
         // TODO Auto-generated method stub
         Frame myFrame = new Frame("Exercise1");
-        //MyCanvas myCanvas = new MyCanvas("ex2.scn", "ex2.viw");
-        MyCanvas myCanvas = new MyCanvas();
+        MyCanvas myCanvas = new MyCanvas("ex2.scn", "ex2.viw");
         myFrame.add(myCanvas);
 
         WindowAdapter myWindowAdapter = new WindowAdapter(){
@@ -18,7 +17,6 @@ public class Main {
                 System.exit(0);
             }
         };
-
         myFrame.addWindowListener(myWindowAdapter);
         myFrame.pack();
         myFrame.setVisible(true);

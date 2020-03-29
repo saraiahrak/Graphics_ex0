@@ -2,57 +2,53 @@ import java.lang.Math.*;
 
 public class Vector {
 
-    private int dim;
     private double[] vector;
+    private int dim;
 
-    public Vector(int d) {
-        double[] v = new double[d];
-        for (double elem : v) {
-            elem = 0;
-        }
-        setDim(d);
-        setVector(v);
+    public Vector(double[] res, int size) {
+        this.vector = res;
+        this.dim = size;
     }
 
-    public Vector(double[] v) {
-        setVector(v);
-        setDim(v.length);
-    }
-
-    public int getDim() {
-        return dim;
+    public Vector(int num) {
+        this.vector = null;
+        this.dim = num;
     }
 
     public double[] getVector() {
-        return vector;
+        return this.vector;
+    }
+
+    public double getX() {
+        return this.vector[0];
+    }
+
+    public double getY() {
+        double g = this.vector[1];
+
+        return g;
+    }
+
+    public double getZ() {
+        return this.vector[2];
+    }
+
+    public double getDim() {
+        return this.dim;
     }
 
     public double getSize() {
         return Math.sqrt(this.dot(this));
     }
 
-    public void setDim(int s) {
-        this.dim = s;
-    }
-
-    public void setVector(double[] vector) {
-        this.vector = vector;
-    }
-
     public Vector cross(Vector v) {
-
         double[] res = new double[this.dim];
 
         res[0] = this.vector[1] * v.vector[2] - this.vector[2] * v.vector[1];
         res[1] = this.vector[2] * v.vector[0] - this.vector[0] * v.vector[2];
+        res[2] = this.vector[0] * v.vector[1] - this.vector[1] * v.vector[0];
 
-        if (this.dim > 2) {
-            res[2] = this.vector[0] * v.vector[1] - this.vector[1] * v.vector[0];
-        } else {
-            res[2] = 0;
-        }
-
-        return new Vector(res);
+        return new Vector(res, this.dim);
     }
 
     public double dot(Vector v) {
