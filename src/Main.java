@@ -11,6 +11,7 @@ public class Main {
         Frame myFrame = new Frame("Exercise1");
         MyCanvas myCanvas = new MyCanvas("ex2.scn", "ex2.viw");
         myFrame.add(myCanvas);
+        myCanvas.addKeyListener(new KeySensor(myCanvas));
 
         WindowAdapter myWindowAdapter = new WindowAdapter(){
             public void windowClosing(WindowEvent e) {
