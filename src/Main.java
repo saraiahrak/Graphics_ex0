@@ -1,15 +1,25 @@
+import java.awt.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
 public class Main {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
-        double[] v = {3,4,0};
-        double[] u = {4,4,2};
+        // TODO Auto-generated method stub
+        Frame myFrame = new Frame("Exercise1");
+        MyCanvas myCanvas = new MyCanvas("ex2.scn", "ex2.viw");
+        myFrame.add(myCanvas);
+        myCanvas.addKeyListener(new KeySensor(myCanvas));
 
-        Vector v1 = new Vector(v);
-        Vector v2 = new Vector(u);
-
-        double v3 = v1.dot(v2);
-        double v4 = v1.dot(v2, v1.getTheta(v2));
-
-        System.out.println(v3);
-        System.out.println(v4);
+        WindowAdapter myWindowAdapter = new WindowAdapter(){
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+        };
+        myFrame.addWindowListener(myWindowAdapter);
+        myFrame.pack();
+        myFrame.setVisible(true);
     }
 }

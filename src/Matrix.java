@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Matrix {
 
     private int rows;
@@ -14,10 +17,14 @@ public class Matrix {
         this.rows = row;
         this.cols = col;
         this.matrix = new double[row][col];
-
-        for (int i = 0; i < row; i++) {
-            for (int j = 0; i < col; i++) {
-                this.matrix[i][j] = 0;
+        //initialize to be the identity Matrix
+        for (int i = 0; i < this.rows; i++) {
+            for (int j = 0; j < this.cols; j++) {
+                if (i == j) {
+                    this.matrix[i][j] = 1;
+                } else {
+                    this.matrix[i][j] = 0;
+                }
             }
         }
     }
@@ -67,8 +74,7 @@ public class Matrix {
                 res[i] += this.at(i, j) * v.at(j);
             }
         }
-
-        return new Vector(res);
+        return new Vector(res, res.length);
     }
 
     public Matrix add(Matrix m) {
@@ -119,5 +125,20 @@ public class Matrix {
 
     public double at(int row, int col) {
         return this.matrix[row][col];
+    }
+
+    public void set(int row, int col, double num) {
+        this.matrix[row][col] = num;
+    }
+
+
+    public List<Vector> updateVertexList(List<Vector> vertexList){
+        List<Vector> newVertexList = new ArrayList<>();
+        int i = 0;
+        while (i < vertexList.size()) {
+            newVertexList.add(this.mult(vertexList.get(i)));
+            i++;
+        }
+        return newVertexList;
     }
 }
