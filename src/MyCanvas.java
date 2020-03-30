@@ -3,8 +3,6 @@ import java.awt.Graphics;
 import java.awt.Point;
 import java.awt.event.*;
 
-import static java.lang.System.out;
-
 class MyCanvas extends Canvas implements MouseListener, MouseMotionListener {
     /**
      *
@@ -19,10 +17,10 @@ class MyCanvas extends Canvas implements MouseListener, MouseMotionListener {
     private Matrix AT;
     private Matrix CT;
     private Point pStart, pEnd;
-    private Vector vStart, vEnd;
+    private Vector vStart, vEnd, vCenter;
     private boolean bFlag = false;
     private Boolean cFlag = false;
-    private double vWidth, vHeight, wWidth, wHeight;
+    private double vWidth, vHeight, wWidth, wHeight, cx, cy;
 
     public MyCanvas(String scn, String viw) {
         this.scene = new Scene(scn);
@@ -34,6 +32,9 @@ class MyCanvas extends Canvas implements MouseListener, MouseMotionListener {
         setSize((int)this.wWidth, (int)this.wHeight);
         this.vWidth = this.view.getSizeX() - 40;
         this.vHeight = this.view.getSizeY() - 40;
+        this.cx = this.wWidth / 2;
+        this.cy = this.wHeight / 2;
+        this.vCenter = new Vector(new double[]{this.cx, this.cy, 1}, 3);
         //set - TT, VM, CT and AT matrix
         setMatrix();
         addMouseListener(this);
@@ -59,9 +60,7 @@ class MyCanvas extends Canvas implements MouseListener, MouseMotionListener {
         //view matrix
         Matrix t1 = transformation.translate(-this.view.getOrigin().getX(), -this.view.getOrigin().getY());
         Matrix r = transformation.rotate(-this.view.getDirection());
-        double wWidth = this.view.getSizeX() - 40;
-        double wHeight = this.view.getSizeY() - 40;
-        Matrix s = transformation.scale(this.vWidth/wWidth, -this.vHeight/wHeight);
+        Matrix s = transformation.scale(this.vWidth / wWidth, -this.vHeight / wHeight);
         Matrix t2 = transformation.translate(this.vWidth / 2 + 20, this.vHeight / 2 + 20);
         this.VM = t2.mult(s).mult(r).mult(t1);
     }
@@ -120,10 +119,10 @@ class MyCanvas extends Canvas implements MouseListener, MouseMotionListener {
         if (this.transformation.getType().equals("translate")) {
             this.CT = transformation.translate(pEnd.getX() - pStart.getX(),pEnd.getY() - pStart.getY());
         } else {
-            Matrix t1 = transformation.translate(this.view.getOrigin().getX(), this.view.getOrigin().getY());
-            Matrix t2 = transformation.translate(-this.view.getOrigin().getX(), -this.view.getOrigin().getY());
-            Vector dv = this.vEnd.sub(this.view.getOrigin());
-            Vector sv = this.vStart.sub(this.view.getOrigin());
+            Matrix t1 = transformation.translate(this.cx, this.cy);
+            Matrix t2 = transformation.translate(-this.cx, -this.cy);
+            Vector dv = this.vEnd.sub(this.vCenter);
+            Vector sv = this.vStart.sub(this.vCenter);
 
             if (this.transformation.getType().equals("scale")) {
                 //calculate the scale factor
