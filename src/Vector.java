@@ -13,6 +13,12 @@ public class Vector {
         this.dim = num;
     }
 
+    public Vector(double x, double y, double z) {
+        this.vector = new double[]{x, y, z};
+        this.dim = 3;
+
+    }
+
     public double[] getVector() {
         return this.vector;
     }
@@ -117,4 +123,3 @@ public class Vector {
         return Math.acos(this.dot(v) / (this.getSize() * v.getSize()));
     }
 }
-

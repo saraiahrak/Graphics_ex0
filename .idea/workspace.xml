@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="f7d74a40-7fc0-45e6-8fc8-341d9109c424" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="f7d74a40-7fc0-45e6-8fc8-341d9109c424" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Clip.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Line.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ex0/KeySensor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/KeySensor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ex0/MyCanvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/MyCanvas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ex0/Paint.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/Paint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ex0/Vector.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/Vector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KeySensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KeySensor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyCanvas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Paint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Paint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Vector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vector.java" afterDir="false" />
+    </list>
+>>>>>>> 5a4b8b04ad88ddc039d745768cfa65b274375b3e
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,10 +31,18 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+        <entry file="file://$PROJECT_DIR$/src/MyCanvas.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="25">
               <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+=======
+            <state relative-caret-position="51">
+              <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+>>>>>>> 5a4b8b04ad88ddc039d745768cfa65b274375b3e
             </state>
           </provider>
         </entry>
@@ -41,36 +65,64 @@
         <option value="$PROJECT_DIR$/src/Hi.java" />
         <option value="$PROJECT_DIR$/src/Math.java" />
         <option value="$PROJECT_DIR$/src/Draw2D.java" />
-        <option value="$PROJECT_DIR$/src/Line.java" />
         <option value="$PROJECT_DIR$/ex2.scn" />
         <option value="$PROJECT_DIR$/src/Point.java" />
         <option value="$PROJECT_DIR$/src/View.java" />
         <option value="$PROJECT_DIR$/src/Transformation.java" />
-        <option value="$PROJECT_DIR$/src/Vector.java" />
-        <option value="$PROJECT_DIR$/src/Paint.java" />
         <option value="$PROJECT_DIR$/src/Scene.java" />
         <option value="$PROJECT_DIR$/src/Matrix.java" />
         <option value="$PROJECT_DIR$/ex2.viw" />
-        <option value="$PROJECT_DIR$/src/MyCanvas.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/KeySensor.java" />
         <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/src/KeySensor.java" />
+        <option value="$PROJECT_DIR$/src/MyCanvas.java" />
+        <option value="$PROJECT_DIR$/src/Vector.java" />
+        <option value="$PROJECT_DIR$/src/Clip.java" />
+        <option value="$PROJECT_DIR$/src/Line.java" />
+        <option value="$PROJECT_DIR$/src/Paint.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+<<<<<<< HEAD
     <option name="x" value="9" />
     <option name="y" value="7" />
     <option name="width" value="1918" />
     <option name="height" value="1040" />
+=======
+    <option name="x" value="663" />
+    <option name="y" value="-21" />
+    <option name="width" value="978" />
+    <option name="height" value="1056" />
+>>>>>>> 5a4b8b04ad88ddc039d745768cfa65b274375b3e
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="PackagesPane" />
       <pane id="ProjectPane" />
+=======
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Graphics_ex0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graphics_ex0" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graphics_ex0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graphics_ex0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+>>>>>>> 5a4b8b04ad88ddc039d745768cfa65b274375b3e
       <pane id="Scope" />
     </panes>
   </component>
@@ -161,7 +213,40 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
+<<<<<<< HEAD
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2521322" />
+=======
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2574899" />
+>>>>>>> 5a4b8b04ad88ddc039d745768cfa65b274375b3e
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3285968" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3285968" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3285968" />
+      <window_info anchor="bottom" id="CheckStyle" order="11" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2534413" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -188,7 +273,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -197,11 +282,18 @@
         <watch expression="double x" language="JAVA" />
         <watch expression="transMat.matrix" />
         <watch expression="newList" language="JAVA" />
+        <watch expression="mThis" language="JAVA" />
+        <watch expression="transMat.matrix" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>mThis</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>newList</expression-string>
         <language-id>JAVA</language-id>
@@ -222,24 +314,10 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Math.java" />
     <entry file="file://$PROJECT_DIR$/src/Draw2D.java" />
-    <entry file="file://$PROJECT_DIR$/src/Line.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/awt/event/MouseEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="829" column="14" lean-forward="true" selection-start-line="829" selection-start-column="14" selection-end-line="829" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-          <folding>
-            <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#696#697#0" expanded="true" />
-            <element signature="e#771#772#0" expanded="true" />
-            <element signature="e#800#801#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -310,38 +388,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Vector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="method#cross#0;class#Vector#0" />
-            <element signature="method#dot#0;class#Vector#0" />
-            <element signature="method#add#0;class#Vector#0" />
-            <element signature="method#sub#0;class#Vector#0" />
-            <element signature="method#scalar#0;class#Vector#0" />
-            <element signature="method#proj#0;class#Vector#0" />
-            <element signature="method#isEqual#0;class#Vector#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Matrix.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Paint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#117#118#0" expanded="true" />
-            <element signature="e#148#149#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -356,16 +406,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyCanvas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="147" column="23" lean-forward="true" selection-start-line="147" selection-start-column="23" selection-end-line="147" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -373,18 +413,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-495">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/KeySensor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="170">
+          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#223#224#0" expanded="true" />
+            <element signature="e#224#225#0" expanded="true" />
             <element signature="e#262#263#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Paint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+          <folding>
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#495#496#0" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
+            <element signature="e#1429#1430#0" expanded="true" />
+            <element signature="e#1498#1499#0" expanded="true" />
+            <element signature="method#scalar#0;class#Vector#0" />
+            <element signature="method#proj#0;class#Vector#0" />
+            <element signature="method#isEqual#0;class#Vector#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Line.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <folding>
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -396,6 +497,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/Clip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyCanvas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+>>>>>>> 5a4b8b04ad88ddc039d745768cfa65b274375b3e
         </state>
       </provider>
     </entry>

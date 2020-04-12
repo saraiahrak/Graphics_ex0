@@ -18,14 +18,14 @@ class MyCanvas extends Canvas implements MouseListener, MouseMotionListener {
     private Matrix CT;
     private Point pStart, pEnd;
     private Vector vStart, vEnd, vCenter;
-    private boolean bFlag = false;
-    private Boolean cFlag = false;
+    private boolean bFlag;
+    private Boolean cFlag;
     private double vWidth, vHeight, wWidth, wHeight, cx, cy;
 
     public MyCanvas(String scn, String viw) {
         this.scene = new Scene(scn);
         this.view = new View(viw);
-        this.paint = new Paint(scene);
+        this.paint = new Paint(scene, view);
         this.transformation = new Transformation();
         this.wWidth = this.view.getSizeX();
         this.wHeight = this.view.getSizeY();
@@ -35,6 +35,8 @@ class MyCanvas extends Canvas implements MouseListener, MouseMotionListener {
         this.cx = this.wWidth / 2;
         this.cy = this.wHeight / 2;
         this.vCenter = new Vector(new double[]{this.cx, this.cy, 1}, 3);
+        this.cFlag = false;
+        this.bFlag = false;
         //set - TT, VM, CT and AT matrix
         setMatrix();
         addMouseListener(this);
@@ -63,6 +65,14 @@ class MyCanvas extends Canvas implements MouseListener, MouseMotionListener {
         Matrix s = transformation.scale(this.vWidth / wWidth, -this.vHeight / wHeight);
         Matrix t2 = transformation.translate(this.vWidth / 2 + 20, this.vHeight / 2 + 20);
         this.VM = t2.mult(s).mult(r).mult(t1);
+    }
+
+    public boolean getCFlag() {
+        return this.cFlag;
+    }
+
+    public void setCFlag(Boolean bool) {
+        this.cFlag = bool;
     }
 
     public String findLocation(double x, double y) {

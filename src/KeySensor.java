@@ -5,13 +5,19 @@ import static java.lang.System.exit;
 
 public class KeySensor implements KeyListener {
     private MyCanvas myCanvas;
+
     public KeySensor(MyCanvas canvas) {
         this.myCanvas = canvas;
-    };
+    }
 
     public void keyPressed(KeyEvent e) {
         if (e.getKeyChar() == 'c' || e.getKeyChar() == 'C') {
-            System.out.println("clipping");
+            if (this.myCanvas.getCFlag()) {
+                this.myCanvas.setCFlag(false);
+            } else {
+                this.myCanvas.setCFlag(true);
+            }
+            this.myCanvas.repaint();
         }
 
         if (e.getKeyChar() == 'r' || e.getKeyChar() == 'R') {
