@@ -21,12 +21,15 @@ public class KeySensor implements KeyListener {
         }
 
         if (e.getKeyChar() == 'r' || e.getKeyChar() == 'R') {
+            this.myCanvas.setCFlag(false);
             this.myCanvas.setMatrix();
             this.myCanvas.repaint();
         }
 
         if (e.getKeyChar() == 'l' || e.getKeyChar() == 'L') {
-            System.out.println("Error");
+            this.myCanvas.setCFlag(false);
+            this.myCanvas.setMatrix();
+            this.myCanvas.repaint();
         }
 
         if (e.getKeyChar() == 'q' || e.getKeyChar() == 'Q') {
