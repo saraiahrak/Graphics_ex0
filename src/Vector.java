@@ -16,7 +16,6 @@ public class Vector {
     public Vector(double x, double y, double z) {
         this.vector = new double[]{x, y, z};
         this.dim = 3;
-
     }
 
     public double[] getVector() {
@@ -28,9 +27,7 @@ public class Vector {
     }
 
     public double getY() {
-        double g = this.vector[1];
-
-        return g;
+        return this.vector[1];
     }
 
     public double getZ() {

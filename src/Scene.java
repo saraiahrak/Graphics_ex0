@@ -21,8 +21,9 @@ public class Scene {
             while (i < counter) {
                 line = bufferReader.readLine();
                 String[] params = line.split(" ");
-                double[] res = {(double)Integer.parseInt(params[0]), (double)Integer.parseInt(params[1]), 1};
-                Vector vector = new Vector(res, 3);
+                double[] res = {Double.parseDouble(params[0]), Double.parseDouble(params[1]),
+                        Double.parseDouble(params[2]), 1};
+                Vector vector = new Vector(res, 4);
                 this.vertexList.add(i, vector);
                 i++;
             }

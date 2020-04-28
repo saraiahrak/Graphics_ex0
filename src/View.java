@@ -4,10 +4,11 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 
 public class View {
-    private Vector origin;
-    private double direction;
-    private Pair<Double, Double> size;
-    private Pair<Integer, Integer> resolution;
+    private Vector position;
+    private Vector lookAt;
+    private Vector up;
+    private double[] window;
+    private Pair<Integer, Integer> viewPort;
 
     public View(String fileName) {
         try{
@@ -20,22 +21,30 @@ public class View {
             while ((line = bufferReader.readLine()) != null) {
                 String[] params = line.split(" ");
                 switch (params[0]) {
-                    case "Origin":
-                        double[] res = {Integer.parseInt(params[1]), Integer.parseInt(params[2]), 1};
-                        this.origin = new Vector(res, 3);
+                    case "Position":
+                        double[] posArr = {Double.parseDouble(params[1]),
+                                Double.parseDouble(params[2]), Double.parseDouble(params[3]), 1};
+                        this.position = new Vector(posArr, 4);
                         break;
-                    case "Direction":
-                        this.direction = Integer.parseInt(params[1]);
+                    case "LookAt":
+                        double[] lookArr = {Double.parseDouble(params[1]),
+                                Double.parseDouble(params[2]), Double.parseDouble(params[3]), 1};
+                        this.lookAt = new Vector(lookArr, 4);
                         break;
-                    case "Size":
-                        double xSize = Integer.parseInt(params[1]);
-                        double ySize = Integer.parseInt(params[2]);
-                        this.size = new Pair<>(xSize, ySize);
+                    case "Up":
+                        double[] upArr = {Double.parseDouble(params[1]),
+                                Double.parseDouble(params[2]), Double.parseDouble(params[3]), 1};
+                        this.up = new Vector(upArr, 4);
                         break;
-                    case "Resolution":
-                        int xResolution = Integer.parseInt(params[1]);
-                        int yResolution = Integer.parseInt(params[2]);
-                        this.resolution = new Pair<>(xResolution, yResolution);
+                    case "Window":
+                        this.window = new double[]{Double.parseDouble(params[1]),
+                                Double.parseDouble(params[2]), Double.parseDouble(params[3]),
+                                Double.parseDouble(params[4])};
+                        break;
+                    case "Viewport":
+                        int xViewport = Integer.parseInt(params[1]);
+                        int yViewport = Integer.parseInt(params[2]);
+                        this.viewPort = new Pair<>(xViewport, yViewport);
                         break;
                 }
             }
@@ -47,19 +56,39 @@ public class View {
         }
     }
 
-    public Vector getOrigin() {
-        return this.origin;
+    public Vector getPosition() {
+        return this.position;
     }
 
-    public double getSizeX() {
-        return this.size.getKey();
+    public Vector getLookAt() {
+        return this.lookAt;
     }
 
-    public double getSizeY() {
-        return this.size.getValue();
+    public Vector getUp() {
+        return this.up;
     }
 
-    public double getDirection() {
-        return this.direction;
+    public double leftBound() {
+        return this.window[0];
+    }
+
+    public double rightBound() {
+        return this.window[1];
+    }
+
+    public double bottomBound() {
+        return this.window[2];
+    }
+
+    public double topBound() {
+        return this.window[3];
+    }
+
+    public int getViewPortX() {
+        return this.viewPort.getKey();
+    }
+
+    public int getViewPortY() {
+        return this.viewPort.getValue();
     }
 }

@@ -29,6 +29,21 @@ public class Matrix {
         }
     }
 
+    public Matrix(Vector vecX, Vector vecY, Vector vecZ) {
+        this.rows = 4;
+        this.cols = 4;
+        this.matrix = new double[4][4];
+        this.matrix[0][0] = vecX.getX();
+        this.matrix[0][1] = vecX.getY();
+        this.matrix[0][2] = vecX.getZ();
+        this.matrix[1][0] = vecY.getX();
+        this.matrix[1][1] = vecY.getY();
+        this.matrix[1][2] = vecY.getZ();
+        this.matrix[2][0] = vecZ.getX();
+        this.matrix[2][1] = vecZ.getY();
+        this.matrix[2][2] = vecZ.getZ();
+    }
+
     public void setCols(int cols) {
         this.cols = cols;
     }
@@ -130,7 +145,6 @@ public class Matrix {
     public void set(int row, int col, double num) {
         this.matrix[row][col] = num;
     }
-
 
     public List<Vector> updateVertexList(List<Vector> vertexList){
         List<Vector> newVertexList = new ArrayList<>();
