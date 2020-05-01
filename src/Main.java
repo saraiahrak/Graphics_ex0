@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         // TODO Auto-generated method stub
         Frame myFrame = new Frame("Exercise1");
-        MyCanvas myCanvas = new MyCanvas("ex2.scn", "ex2.viw");
+        MyCanvas myCanvas = new MyCanvas("example3d.scn", "example3d.viw");
         myFrame.add(myCanvas);
         myCanvas.addKeyListener(new KeySensor(myCanvas));
 

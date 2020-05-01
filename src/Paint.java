@@ -10,7 +10,7 @@ public class Paint {
     public Paint(Scene sc, View viw) {
         this.scene = sc;
         this.view = viw;
-        this.clip = new Clip(this.view.getSizeX(), this.view.getSizeY());
+        this.clip = new Clip(this.view.getViewPortX(), this.view.getViewPortY());
     }
 
     public void paint(Graphics g, List<Vector> vertexList, boolean cFlag) {

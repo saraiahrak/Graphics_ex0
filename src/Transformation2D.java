@@ -1,7 +1,7 @@
-public class Transformation {
+public class Transformation2D {
     private String type;
 
-    public Transformation() {};
+    public Transformation2D() {};
 
     public Matrix translate(double dx, double dy) {
         Matrix transMat = new Matrix(3,3);
@@ -34,5 +34,3 @@ public class Transformation {
         this.type = t;
     }
 }
-
-

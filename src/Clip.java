@@ -5,10 +5,10 @@ public class Clip {
     private Line top;
 
     public Clip(double width, double height) {
-        this.left = new Line(20, 20, 1, 20, height - 20, 1);
-        this.right = new Line(width - 20, 20, 1, width - 20, height - 20, 1);
-        this.top = new Line(20, 20 ,1, width - 20, 20, 1);
-        this.bottom = new Line(20, height - 20, 1, width - 20, height - 20, 1);
+        this.left = new Line(20, 20, 1, 20, height, 1);
+        this.right = new Line(width, 20, 1, width, height, 1);
+        this.top = new Line(20, 20 ,1, width, 20, 1);
+        this.bottom = new Line(20, height, 1, width, height, 1);
     }
 
     public Line clipLine(Line line) {
