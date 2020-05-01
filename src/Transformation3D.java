@@ -11,11 +11,19 @@ public class Transformation3D {
         return transMat;
     }
 
-    public Matrix scale(double sx, double sy, double sz) {
+    public Matrix scale(double sF, double sY) {
         Matrix scaleMat = new Matrix(4,4);
-        scaleMat.set(0, 0, sx);
-        scaleMat.set(1, 1, sy);
-        scaleMat.set(2, 2, sz);
+        scaleMat.set(0, 0, sF);
+        scaleMat.set(1, 1, sY);
+        scaleMat.set(2, 2, sF);
+        return scaleMat;
+    }
+
+    public Matrix scale(double sF) {
+        Matrix scaleMat = new Matrix(4,4);
+        scaleMat.set(0, 0, sF);
+        scaleMat.set(1, 1, sF);
+        scaleMat.set(2, 2, sF);
         return scaleMat;
     }
 

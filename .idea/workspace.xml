@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7d74a40-7fc0-45e6-8fc8-341d9109c424" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Transformation3D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ex0/META-INF/ex0.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/META-INF/ex0.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ex0/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ex0/MyCanvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/MyCanvas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ex0/Paint.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/Paint.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Clip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Clip.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex0.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ex0.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Matrix.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyCanvas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Paint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Paint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transformation2D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transformation3D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transformation3D.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Vector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View.java" afterDir="false" />
     </list>
@@ -115,6 +108,10 @@
     </todo-panel>
   </component>
   <component name="WindowStateProjectService">
+    <state x="446" y="56" key="#com.intellij.ide.util.MemberChooser" timestamp="1588332318197">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="446" y="56" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1588332318197" />
     <state x="158" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1588081354741">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -123,38 +120,38 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="396" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1588088012495" />
-    <state width="1237" height="204" key="GridCell.Tab.0.bottom" timestamp="1588092509483">
+    <state width="1237" height="204" key="GridCell.Tab.0.bottom" timestamp="1588336176354">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588092509483" />
-    <state width="1237" height="204" key="GridCell.Tab.0.center" timestamp="1588092509483">
+    <state width="1237" height="204" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588336176354" />
+    <state width="1237" height="204" key="GridCell.Tab.0.center" timestamp="1588336176354">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1588092509483" />
-    <state width="1237" height="204" key="GridCell.Tab.0.left" timestamp="1588092509482">
+    <state width="1237" height="204" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1588336176354" />
+    <state width="1237" height="204" key="GridCell.Tab.0.left" timestamp="1588336176354">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1588092509482" />
-    <state width="1237" height="204" key="GridCell.Tab.0.right" timestamp="1588092509483">
+    <state width="1237" height="204" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1588336176354" />
+    <state width="1237" height="204" key="GridCell.Tab.0.right" timestamp="1588336176354">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1588092509483" />
-    <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1588092509483">
+    <state width="1237" height="204" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1588336176354" />
+    <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1588336176166">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588092509483" />
-    <state width="1237" height="204" key="GridCell.Tab.1.center" timestamp="1588092509483">
+    <state width="1237" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588336176166" />
+    <state width="1237" height="204" key="GridCell.Tab.1.center" timestamp="1588336176165">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1588092509483" />
-    <state width="1237" height="204" key="GridCell.Tab.1.left" timestamp="1588092509483">
+    <state width="1237" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1588336176165" />
+    <state width="1237" height="204" key="GridCell.Tab.1.left" timestamp="1588336176165">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1588092509483" />
-    <state width="1237" height="204" key="GridCell.Tab.1.right" timestamp="1588092509483">
+    <state width="1237" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1588336176165" />
+    <state width="1237" height="204" key="GridCell.Tab.1.right" timestamp="1588336176165">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1588092509483" />
+    <state width="1237" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1588336176165" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -170,6 +167,16 @@
         <watch expression="v0" language="JAVA" />
         <watch expression="v1" language="JAVA" />
         <watch expression="vertexList" language="JAVA" />
+        <watch expression="t1" language="JAVA" />
+        <watch expression="tmpZ.getSize()" language="JAVA" />
+        <watch expression="tmpZ.getSize()" language="JAVA" />
+        <watch expression="this.CT.matrix[0]" />
+        <watch expression="this.scene.vertexList" />
+        <watch expression="res" language="JAVA" />
+        <watch expression="this.at(i,k)" language="JAVA" />
+        <watch expression="m.at(k,j)" language="JAVA" />
+        <watch expression="s.matrix[1]" />
+        <watch expression="vertexList.get(2).vector" />
       </configuration>
     </watches-manager>
   </component>
