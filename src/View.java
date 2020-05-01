@@ -9,6 +9,7 @@ public class View {
     private Vector up;
     private double[] window;
     private Pair<Integer, Integer> viewPort;
+    private double windowWidth, windowHeight;
 
     public View(String fileName) {
         try{
@@ -40,6 +41,7 @@ public class View {
                         this.window = new double[]{Double.parseDouble(params[1]),
                                 Double.parseDouble(params[2]), Double.parseDouble(params[3]),
                                 Double.parseDouble(params[4])};
+                        setBound();
                         break;
                     case "Viewport":
                         int xViewport = Integer.parseInt(params[1]);
@@ -90,5 +92,25 @@ public class View {
 
     public int getViewPortY() {
         return this.viewPort.getValue();
+    }
+
+    public double getAbsoluteValue(double num) {
+        if (num < 0) {
+            return (-1) * num;
+        }
+        return num;
+    }
+
+    public void setBound() {
+        this.windowWidth = getAbsoluteValue(leftBound()) + getAbsoluteValue(rightBound());
+        this.windowHeight = getAbsoluteValue(topBound()) + getAbsoluteValue(bottomBound());
+    }
+
+    public double getWindowWidth() {
+        return this.windowWidth;
+    }
+
+    public double getWindowHeight() {
+        return this.windowHeight;
     }
 }

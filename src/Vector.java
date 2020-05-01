@@ -9,13 +9,13 @@ public class Vector {
     }
 
     public Vector(int num) {
-        this.vector = new double[num];
+        this.vector = new double[]{1, 1, 1, 1};
         this.dim = num;
     }
 
     public Vector(double x, double y, double z) {
         this.vector = new double[]{x, y, z};
-        this.dim = 3;
+        this.dim = 4;
     }
 
     public double[] getVector() {
@@ -48,6 +48,7 @@ public class Vector {
         res[0] = this.vector[1] * v.vector[2] - this.vector[2] * v.vector[1];
         res[1] = this.vector[2] * v.vector[0] - this.vector[0] * v.vector[2];
         res[2] = this.vector[0] * v.vector[1] - this.vector[1] * v.vector[0];
+        res[3] = 1;
 
         return new Vector(res, this.dim);
     }

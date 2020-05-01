@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7d74a40-7fc0-45e6-8fc8-341d9109c424" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex0.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ex0.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Matrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyCanvas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Transformation3D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transformation3D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Vector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,20 +54,8 @@
         <entry file="file://$PROJECT_DIR$/src/Matrix.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1147">
-              <caret line="157" column="1" selection-start-line="157" selection-start-column="1" selection-end-line="157" selection-end-column="1" />
+              <caret line="156" column="1" selection-start-line="156" selection-start-column="1" selection-end-line="156" selection-end-column="1" />
               <folding>
-                <element signature="e#1308#1309#0" expanded="true" />
-                <element signature="e#1340#1341#0" expanded="true" />
-                <element signature="e#1388#1389#0" expanded="true" />
-                <element signature="e#1424#1425#0" expanded="true" />
-                <element signature="e#1461#1462#0" expanded="true" />
-                <element signature="e#1493#1494#0" expanded="true" />
-                <element signature="e#1521#1522#0" expanded="true" />
-                <element signature="e#1548#1549#0" expanded="true" />
-                <element signature="e#1576#1577#0" expanded="true" />
-                <element signature="e#1603#1604#0" expanded="true" />
-                <element signature="e#1640#1641#0" expanded="true" />
-                <element signature="e#1669#1670#0" expanded="true" />
                 <element signature="e#3711#3712#0" expanded="true" />
                 <element signature="e#3755#3756#0" expanded="true" />
                 <element signature="e#3808#3809#0" expanded="true" />
@@ -86,8 +68,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="578" column="38" lean-forward="true" selection-start-line="578" selection-start-column="38" selection-end-line="578" selection-end-column="38" />
+            <state relative-caret-position="273">
+              <caret line="554" column="39" lean-forward="true" selection-start-line="554" selection-start-column="39" selection-end-line="554" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -109,8 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-475">
-              <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+            <state relative-caret-position="-450">
+              <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -375,42 +357,50 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="158" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680@0.0.1280.680" timestamp="1588081354741" />
+    <state width="400" height="438" key="DebuggerActiveHint" timestamp="1588337471194">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="400" height="438" key="DebuggerActiveHint/0.0.1280.680@0.0.1280.680" timestamp="1588337471194" />
     <state x="396" y="95" key="FileChooserDialogImpl" timestamp="1588088012495">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="396" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1588088012495" />
-    <state width="1237" height="162" key="GridCell.Tab.0.bottom" timestamp="1588335623448">
+    <state width="1237" height="162" key="GridCell.Tab.0.bottom" timestamp="1588338292894">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="162" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588335623448" />
-    <state width="1237" height="162" key="GridCell.Tab.0.center" timestamp="1588335623448">
+    <state width="1237" height="162" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588338292894" />
+    <state width="1237" height="162" key="GridCell.Tab.0.center" timestamp="1588338292894">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="162" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1588335623448" />
-    <state width="1237" height="162" key="GridCell.Tab.0.left" timestamp="1588335623448">
+    <state width="1237" height="162" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1588338292894" />
+    <state width="1237" height="162" key="GridCell.Tab.0.left" timestamp="1588338292893">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="162" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1588335623448" />
-    <state width="1237" height="162" key="GridCell.Tab.0.right" timestamp="1588335623448">
+    <state width="1237" height="162" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1588338292893" />
+    <state width="1237" height="162" key="GridCell.Tab.0.right" timestamp="1588338292894">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="162" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1588335623448" />
-    <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1588331042829">
+    <state width="1237" height="162" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1588338292894" />
+    <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1588338167446">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588331042829" />
-    <state width="1237" height="204" key="GridCell.Tab.1.center" timestamp="1588331042829">
+    <state width="1237" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588338167446" />
+    <state width="1237" height="204" key="GridCell.Tab.1.center" timestamp="1588338167446">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1588331042829" />
-    <state width="1237" height="204" key="GridCell.Tab.1.left" timestamp="1588331042828">
+    <state width="1237" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1588338167446" />
+    <state width="1237" height="204" key="GridCell.Tab.1.left" timestamp="1588338167446">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1588331042828" />
-    <state width="1237" height="204" key="GridCell.Tab.1.right" timestamp="1588331042829">
+    <state width="1237" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1588338167446" />
+    <state width="1237" height="204" key="GridCell.Tab.1.right" timestamp="1588338167446">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1588331042829" />
+    <state width="1237" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1588338167446" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1588336572873">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1588336572873" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -447,20 +437,8 @@
     <entry file="file://$PROJECT_DIR$/src/Matrix.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1147">
-          <caret line="157" column="1" selection-start-line="157" selection-start-column="1" selection-end-line="157" selection-end-column="1" />
+          <caret line="156" column="1" selection-start-line="156" selection-start-column="1" selection-end-line="156" selection-end-column="1" />
           <folding>
-            <element signature="e#1308#1309#0" expanded="true" />
-            <element signature="e#1340#1341#0" expanded="true" />
-            <element signature="e#1388#1389#0" expanded="true" />
-            <element signature="e#1424#1425#0" expanded="true" />
-            <element signature="e#1461#1462#0" expanded="true" />
-            <element signature="e#1493#1494#0" expanded="true" />
-            <element signature="e#1521#1522#0" expanded="true" />
-            <element signature="e#1548#1549#0" expanded="true" />
-            <element signature="e#1576#1577#0" expanded="true" />
-            <element signature="e#1603#1604#0" expanded="true" />
-            <element signature="e#1640#1641#0" expanded="true" />
-            <element signature="e#1669#1670#0" expanded="true" />
             <element signature="e#3711#3712#0" expanded="true" />
             <element signature="e#3755#3756#0" expanded="true" />
             <element signature="e#3808#3809#0" expanded="true" />
@@ -506,8 +484,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="578" column="38" lean-forward="true" selection-start-line="578" selection-start-column="38" selection-end-line="578" selection-end-column="38" />
+        <state relative-caret-position="273">
+          <caret line="554" column="39" lean-forward="true" selection-start-line="554" selection-start-column="39" selection-end-line="554" selection-end-column="39" />
         </state>
       </provider>
     </entry>

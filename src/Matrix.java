@@ -2,7 +2,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Matrix {
-
     private int rows;
     private int cols;
     private double[][] matrix;
@@ -42,6 +41,7 @@ public class Matrix {
         this.matrix[2][0] = vecZ.getX();
         this.matrix[2][1] = vecZ.getY();
         this.matrix[2][2] = vecZ.getZ();
+        this.matrix[3] = new double[]{0, 0, 0, 1};
     }
 
     public void setCols(int cols) {
@@ -78,7 +78,6 @@ public class Matrix {
                 }
             }
         }
-
         return new Matrix(res);
     }
 
