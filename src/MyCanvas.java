@@ -123,7 +123,7 @@ class MyCanvas extends Canvas implements MouseListener, MouseMotionListener {
         // TODO Auto-generated method stub
         this.pEnd = arg0.getPoint();
         //convert the point to vector
-        this.vEnd = new Vector(new double[]{this.pEnd.getX(), this.pEnd.getY(), 0, 1}, 4);
+        this.vEnd = new Vector(new double[]{this.pEnd.getX(), this.pEnd.getY(), 1, 1}, 4);
         this.bFlag = true;
         AT = CT.mult(AT);
         this.CT = new Matrix(4,4);
