@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Matrix {
@@ -145,7 +146,7 @@ public class Matrix {
         this.matrix[row][col] = num;
     }
 
-    public List<Vector> updateVertexList(List<Vector> vertexList){
+    public List<Vector> updateVertexList(List<Vector> vertexList) {
         List<Vector> newVertexList = new ArrayList<>();
         int i = 0;
         while (i < vertexList.size()) {
@@ -153,5 +154,15 @@ public class Matrix {
             i++;
         }
         return newVertexList;
+    }
+
+    public Matrix clone() {
+        double[][] matCopy = new double[rows][cols];
+
+        for (int i = 0; i < rows; i++) {
+            double[] rowCopy = Arrays.copyOf(matrix[i], matrix[i].length);
+            matCopy[i] = rowCopy;
+        }
+        return new Matrix(matCopy);
     }
 }

@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Vector {
 
     private double[] vector;
@@ -119,5 +121,10 @@ public class Vector {
 
     public double getTheta(Vector v) {
         return Math.acos(this.dot(v) / (this.getSize() * v.getSize()));
+    }
+
+    public Vector clone() {
+        double[] copy = Arrays.copyOf(vector, vector.length);
+        return new Vector(copy, dim);
     }
 }

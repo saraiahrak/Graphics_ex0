@@ -12,18 +12,19 @@ public class Clip {
     }
 
     public Line clipLine(Line line) {
-        boolean inFlag = true;
-        boolean outFlag = true;
+        boolean in = true;
+        boolean out = true;
+
         double x1 = line.getP0().getX();
         double y1 = line.getP0().getY();
         double x2 = line.getP1().getX();
         double y2 = line.getP1().getY();
 
         if (x1 < this.left.getP0().getX() || x2 < this.left.getP0().getX()) {
-            inFlag = false;
+            in = false;
             Point intersection = line.intersectionWith(this.left);
             if (intersection != null) {
-                outFlag = false;
+                out = false;
                 if (x1 < this.left.getP0().getX()) {
                     x1 = intersection.getX();
                     y1 = intersection.getY();
@@ -34,10 +35,10 @@ public class Clip {
             }
         }
         if (x1 > this.right.getP0().getX() || x2 > this.right.getP0().getX()) {
-            inFlag = false;
+            in = false;
             Point intersection = line.intersectionWith(this.right);
             if (intersection != null) {
-                outFlag = false;
+                out = false;
                 if (x1 > this.right.getP0().getX()) {
                     x1 = intersection.getX();
                     y1 = intersection.getY();
@@ -48,10 +49,10 @@ public class Clip {
             }
         }
         if (y1 < this.top.getP0().getY() || y2 < this.top.getP0().getY()) {
-            inFlag = false;
+            in = false;
             Point intersection = line.intersectionWith(this.top);
             if (intersection != null) {
-                outFlag = false;
+                out = false;
                 if (y1 < this.top.getP0().getY()) {
                     x1 = intersection.getX();
                     y1 = intersection.getY();
@@ -63,10 +64,10 @@ public class Clip {
         }
 
         if (y1 > this.bottom.getP0().getY() || y2 > this.bottom.getP0().getY()) {
-            inFlag = false;
+            in = false;
             Point intersection = line.intersectionWith(this.bottom);
             if (intersection != null) {
-                outFlag = false;
+                out = false;
                 if (y1 > this.bottom.getP0().getY()) {
                     x1 = intersection.getX();
                     y1 = intersection.getY();
@@ -77,11 +78,11 @@ public class Clip {
             }
         }
 
-        if (inFlag == true) {
+        if (in) {
             return line;
         }
 
-        if (outFlag == true) {
+        if (out) {
             return null;
         }
 

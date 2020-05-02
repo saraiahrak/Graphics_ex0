@@ -12,7 +12,7 @@ public class View {
     private double windowWidth, windowHeight;
 
     public View(String fileName) {
-        try{
+        try {
             //Create object of FileReader
             FileReader inputFile = new FileReader(fileName);
             //Instantiate the BufferedReader Class
@@ -53,7 +53,7 @@ public class View {
             //Close the buffer reader
             bufferReader.close();
             inputFile.close();
-        } catch(Exception e){
+        } catch (Exception e) {
             System.out.println("Error while reading file line by line");
         }
     }
