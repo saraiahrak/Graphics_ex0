@@ -14,15 +14,16 @@ public class ScaleHandler implements TransformationHandler {
 
     @Override
     public Matrix handle() {
-        Matrix t1 = Transformation3D.translate(0, 0,
-                view.getPosition().getZ() - view.getLookAt().getZ());
+        double d = (view.getPosition().sub(view.getLookAt())).getSize();
+        Matrix t1 = Transformation3D.translate(0,  0,
+                d);
         Matrix t2 = Transformation3D.translate(0, 0,
-                view.getLookAt().getZ() - view.getPosition().getZ());
+                -d);
 
 
         Vector vEnd = new Vector(new double[]{end.getX(), end.getY(), 1, 1}, 4);
         Vector vStart = new Vector(new double[]{start.getX(), start.getY(), 1, 1}, 4);
-        Vector vCenter = new Vector(new double[]{view.getWindowWidth() / 2, view.getWindowHeight() / 2, 1, 1}, 4);
+        Vector vCenter = new Vector(new double[]{view.getWindowWidth() / 2, view.getWindowHeight() / 2, 0, 1}, 4);
 
         Vector dv = vEnd.sub(vCenter);
         Vector sv = vStart.sub(vCenter);

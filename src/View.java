@@ -2,115 +2,116 @@ import javafx.util.Pair;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.util.ArrayList;
 
 public class View {
     private Vector position;
     private Vector lookAt;
     private Vector up;
-    private double[] window;
-    private Pair<Integer, Integer> viewPort;
-    private double windowWidth, windowHeight;
+    private int viewPortWidth;
+    private int viewPortHeight;
+    private double left;
+    private double right;
+    private double top;
+    private double bottom;
+    private double windowWidth;
+    private double windowHeight;
 
-    public View(String fileName) {
-        try {
-            //Create object of FileReader
-            FileReader inputFile = new FileReader(fileName);
-            //Instantiate the BufferedReader Class
-            BufferedReader bufferReader = new BufferedReader(inputFile);
-            //read the first line
-            String line;
-            while ((line = bufferReader.readLine()) != null) {
-                String[] params = line.split(" ");
-                switch (params[0]) {
-                    case "Position":
-                        double[] posArr = {Double.parseDouble(params[1]),
-                                Double.parseDouble(params[2]), Double.parseDouble(params[3]), 1};
-                        this.position = new Vector(posArr, 4);
-                        break;
-                    case "LookAt":
-                        double[] lookArr = {Double.parseDouble(params[1]),
-                                Double.parseDouble(params[2]), Double.parseDouble(params[3]), 1};
-                        this.lookAt = new Vector(lookArr, 4);
-                        break;
-                    case "Up":
-                        double[] upArr = {Double.parseDouble(params[1]),
-                                Double.parseDouble(params[2]), Double.parseDouble(params[3]), 1};
-                        this.up = new Vector(upArr, 4);
-                        break;
-                    case "Window":
-                        this.window = new double[]{Double.parseDouble(params[1]),
-                                Double.parseDouble(params[2]), Double.parseDouble(params[3]),
-                                Double.parseDouble(params[4])};
-                        setBound();
-                        break;
-                    case "Viewport":
-                        int xViewport = Integer.parseInt(params[1]);
-                        int yViewport = Integer.parseInt(params[2]);
-                        this.viewPort = new Pair<>(xViewport, yViewport);
-                        break;
-                }
+    public View(String filename) {
+        initView(filename);
+    }
+
+    private void initView(String filename) {
+        ArrayList<String> lines = Reader.readLines(filename);
+        setComponents(lines);
+    }
+
+    private void setComponents(ArrayList<String> lines) {
+        for (String line : lines) {
+            String[] tokens = line.split(" ");
+
+            switch (tokens[0]) {
+                case "Position":
+                    position = new Vector(Double.parseDouble(tokens[1]), Double.parseDouble(tokens[2]), Double.parseDouble(tokens[3]));
+                    break;
+                case "LookAt":
+                    lookAt = new Vector(Double.parseDouble(tokens[1]), Double.parseDouble(tokens[2]), Double.parseDouble(tokens[3]));
+                    break;
+                case "Up":
+                    up = new Vector(Double.parseDouble(tokens[1]), Double.parseDouble(tokens[2]), Double.parseDouble(tokens[3]));
+                    break;
+                case "Window":
+                    left = Double.parseDouble(tokens[1]);
+                    right = Double.parseDouble(tokens[2]);
+                    bottom = Double.parseDouble(tokens[3]);
+                    top = Double.parseDouble(tokens[4]);
+                    setBound();
+                    break;
+                case "Viewport":
+                    viewPortWidth = Integer.parseInt(tokens[1]);
+                    viewPortHeight = Integer.parseInt(tokens[2]);
+                    break;
+                default:
+
             }
-            //Close the buffer reader
-            bufferReader.close();
-            inputFile.close();
-        } catch (Exception e) {
-            System.out.println("Error while reading file line by line");
         }
     }
 
+
     public Vector getPosition() {
-        return this.position;
+        return position;
     }
 
     public Vector getLookAt() {
-        return this.lookAt;
+        return lookAt;
     }
 
     public Vector getUp() {
-        return this.up;
+        return up;
     }
 
-    public double leftBound() {
-        return this.window[0];
+    public double getLeft() {
+        return left;
     }
 
-    public double rightBound() {
-        return this.window[1];
+    public double getRight() {
+        return right;
     }
 
-    public double bottomBound() {
-        return this.window[2];
+    public double getBottom() {
+        return bottom;
     }
 
-    public double topBound() {
-        return this.window[3];
+    public double getTop() {
+        return top;
     }
 
-    public int getViewPortX() {
-        return this.viewPort.getKey();
+    public int getViewPortWidth() {
+        return viewPortWidth;
     }
 
-    public int getViewPortY() {
-        return this.viewPort.getValue();
+    public int getViewPortHeight() {
+        return viewPortHeight;
     }
 
-    public double getAbsoluteValue(double num) {
-        if (num < 0) {
-            return (-1) * num;
-        }
-        return num;
+    public void setWindowWidth(double width) {
+        windowWidth = width;
+    }
+
+    public void setWindowHeight(double height) {
+        windowHeight = height;
     }
 
     public void setBound() {
-        this.windowWidth = getAbsoluteValue(leftBound()) + getAbsoluteValue(rightBound());
-        this.windowHeight = getAbsoluteValue(topBound()) + getAbsoluteValue(bottomBound());
+        windowWidth = Utils.getAbsoluteValue(left) + Utils.getAbsoluteValue(right);
+        windowHeight = Utils.getAbsoluteValue(top) + Utils.getAbsoluteValue(bottom);
     }
 
     public double getWindowWidth() {
-        return this.windowWidth;
+        return windowWidth;
     }
 
     public double getWindowHeight() {
-        return this.windowHeight;
+        return windowHeight;
     }
 }

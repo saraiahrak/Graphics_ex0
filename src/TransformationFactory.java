@@ -16,8 +16,8 @@ public class TransformationFactory {
     public TransformationHandler create() {
         double x = start.getX();
         double y = start.getY();
-        double width = view.getViewPortX();
-        double height = view.getViewPortY();
+        double width = view.getViewPortWidth();
+        double height = view.getViewPortHeight();
 
         if (x < width / 3 || x > (2 * width) / 3) {
             if (y < height / 3 || y > (2 * height) / 3) {

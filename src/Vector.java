@@ -9,6 +9,10 @@ public class Vector {
         this.vector = res;
         this.dim = size;
     }
+    public Vector(double[] res) {
+        this.vector = res;
+        this.dim = res.length + 1;
+    }
 
     public Vector(int num) {
         this.vector = new double[]{1, 1, 1, 1};
@@ -16,7 +20,7 @@ public class Vector {
     }
 
     public Vector(double x, double y, double z) {
-        this.vector = new double[]{x, y, z};
+        this.vector = new double[]{x, y, z, 1};
         this.dim = 4;
     }
 

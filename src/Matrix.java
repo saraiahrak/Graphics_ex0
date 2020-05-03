@@ -82,14 +82,14 @@ public class Matrix {
         return new Matrix(res);
     }
 
-    public Vector mult(Vector v) {
+    public Vertex mult(Vertex v) {
         double[] res = new double[this.rows];
         for (int i = 0; i < this.rows; i++) {
             for (int j = 0; j < this.cols; j++) {
                 res[i] += this.at(i, j) * v.at(j);
             }
         }
-        return new Vector(res, res.length);
+        return new Vertex(res[0], res[1], res[2]);
     }
 
     public Matrix add(Matrix m) {
@@ -146,8 +146,8 @@ public class Matrix {
         this.matrix[row][col] = num;
     }
 
-    public List<Vector> updateVertexList(List<Vector> vertexList) {
-        List<Vector> newVertexList = new ArrayList<>();
+    public ArrayList<Vertex> updateVertexList(List<Vertex> vertexList) {
+        ArrayList<Vertex> newVertexList = new ArrayList<>();
         int i = 0;
         while (i < vertexList.size()) {
             newVertexList.add(this.mult(vertexList.get(i)));
