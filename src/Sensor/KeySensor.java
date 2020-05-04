@@ -16,24 +16,29 @@ public class KeySensor implements KeyListener {
 
     public void keyPressed(KeyEvent e) {
         if (e.getKeyChar() == 'c' || e.getKeyChar() == 'C') {
-            if (this.myCanvas.getCFlag()) {
-                this.myCanvas.setCFlag(false);
+            if (myCanvas.getCFlag()) {
+                myCanvas.setCFlag(false);
             } else {
-                this.myCanvas.setCFlag(true);
+                myCanvas.setCFlag(true);
             }
-            this.myCanvas.repaint();
+            myCanvas.repaint();
         }
 
         if (e.getKeyChar() == 'r' || e.getKeyChar() == 'R') {
-            this.myCanvas.setCFlag(false);
-            this.myCanvas.setMatrix();
-            this.myCanvas.repaint();
+            myCanvas.setCFlag(false);
+            myCanvas.getView().initTransformationMatrix();
+            myCanvas.repaint();
         }
 
         if (e.getKeyChar() == 'l' || e.getKeyChar() == 'L') {
-            this.myCanvas.setCFlag(false);
-            this.myCanvas.setMatrix();
-            this.myCanvas.repaint();
+            myCanvas.setCFlag(false);
+            myCanvas.getView().initTransformationMatrix();
+            myCanvas.repaint();
+        }
+
+        if (e.getKeyChar() == 'x' || e.getKeyChar() == 'X') {
+            myCanvas.getView().setRotation("x");
+            exit(0);
         }
 
         if (e.getKeyChar() == 'q' || e.getKeyChar() == 'Q') {

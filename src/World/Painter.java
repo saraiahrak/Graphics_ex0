@@ -8,14 +8,10 @@ import java.awt.*;
 import java.util.List;
 
 public class Painter {
-    private Scene scene;
-    private View view;
     private Clip clip;
 
-    public Painter(Scene sc, View viw) {
-        this.scene = sc;
-        this.view = viw;
-        this.clip = new Clip(this.view.getViewPortWidth(), this.view.getViewPortHeight());
+    public Painter(double width, double height) {
+        this.clip = new Clip(width, height);
     }
 
     public void paint(Graphics g, List<Edge> edgesList, boolean cFlag) {

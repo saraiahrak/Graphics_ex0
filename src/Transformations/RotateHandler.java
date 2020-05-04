@@ -2,7 +2,6 @@ package Transformations;
 
 import Math.*;
 import Math.Matrix;
-import World.*;
 import View.*;
 import java.awt.Point;
 
@@ -23,9 +22,9 @@ public class RotateHandler implements TransformationHandler {
 
 
 
-        Matrix t1 = Transformation3D.translate(0, 0,
+        Matrix t1 = Transformations.translate(0, 0,
                 view.getPosition().getZ() - view.getLookAt().getZ());
-        Matrix t2 = Transformation3D.translate(0, 0,
+        Matrix t2 = Transformations.translate(0, 0,
                 view.getLookAt().getZ() - view.getPosition().getZ());
 
         Vector xAxis = new Vector(new double[]{1, 0, 0, 0});
@@ -42,7 +41,7 @@ public class RotateHandler implements TransformationHandler {
         //the transformation type is "rotate"
         double dTheta = dv.getTheta(xAxis);
         double sTheta = sv.getTheta(xAxis);
-        rotate = Transformation3D.rotate(dTheta - sTheta);
+        rotate = Transformations.rotate(dTheta - sTheta);
         //update the current matrix
         return t1.mult(rotate).mult(t2).clone();
     }

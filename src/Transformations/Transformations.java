@@ -2,7 +2,7 @@ package Transformations;
 
 import Math.*;
 
-public class Transformation3D {
+public class Transformations {
 
     public static Matrix translate(double dx, double dy, double dz) {
         Matrix transMat = new Matrix(4, 4);
@@ -11,15 +11,6 @@ public class Transformation3D {
         transMat.set(2, 3, dz);
         return transMat;
     }
-
-//    public static Math.Matrix scale(double sF, double sY) {
-//        Math.Matrix scaleMat = new Math.Matrix(4, 4);
-//        scaleMat.set(0, 0, sF);
-//        scaleMat.set(1, 1, sY);
-//        scaleMat.set(2, 2, sF);
-//        return scaleMat;
-//    }
-
 
     public static Matrix scale(double sx, double sy, double sz) {
         Matrix scaleMat = new Matrix(4, 4);

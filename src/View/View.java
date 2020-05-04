@@ -1,28 +1,173 @@
 package View;
 
-import javafx.util.Pair;
+import Transformations.Transformations;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
 import java.util.ArrayList;
+
 import Math.*;
 import Utils.*;
 
 public class View {
-    private Vector position;
-    private Vector lookAt;
-    private Vector up;
-    private int viewPortWidth;
-    private int viewPortHeight;
-    private double left;
-    private double right;
-    private double top;
-    private double bottom;
-    private double windowWidth;
-    private double windowHeight;
+    private static Vector position;
+    private static Vector lookAt;
+    private static Vector up;
+    private static int viewPortWidth;
+    private static int viewPortHeight;
+    private static double left;
+    private static double right;
+    private static double top;
+    private static double bottom;
+    private static double windowWidth;
+    private static double windowHeight;
+    private Matrix TT, VM1, VM2, AT, CT, Pro;
+    private Vector rotation;
+    private Vector xAxis;
+    private Vector yAxis;
+    private Vector zAxis;
+
 
     public View(String filename) {
         initView(filename);
+        initTransformationMatrix();
+        initAxes();
+        initVM1();
+        initVM2();
+        rotation = zAxis;
+    }
+
+
+    public Matrix getTT() {
+        return TT;
+    }
+
+    public Matrix getAT() {
+        return AT;
+    }
+
+    public Matrix getCT() {
+        return CT;
+    }
+
+    public Matrix getVM1() {
+        return VM1;
+    }
+
+    public Matrix getVM2() {
+        return VM2;
+    }
+
+    public Vector getRotation() {
+        return rotation;
+    }
+
+    public Vector getxAxis() {
+        return xAxis;
+    }
+
+    public Vector getyAxis() {
+        return yAxis;
+    }
+
+    public Vector getzAxis() {
+        return zAxis;
+    }
+
+    public Matrix getPro() {
+        return Pro;
+    }
+
+    public void setTT(Matrix tt) {
+        TT = tt;
+    }
+
+    public void setVM1(Matrix vm1) {
+        VM1 = vm1;
+    }
+
+    public void setAT(Matrix at) {
+        AT = at;
+    }
+
+    public void setCT(Matrix ct) {
+        CT = ct;
+    }
+
+    public void setPro(Matrix pro) {
+        Pro = pro;
+    }
+
+    public void initAxes() {
+        // form viewing coordinate system
+        // Z-Axis
+        Vector z = position.sub(lookAt);
+        zAxis = z.scalar(1 / z.getSize());
+        // X-Axis
+        Vector x = up.cross(zAxis);
+        xAxis = x.scalar(1 / x.getSize());
+        // Y-Axis
+        yAxis = zAxis.cross(xAxis);
+    }
+
+
+    public void initVM1() {
+        //view matrix
+        Matrix t1 = Transformations.translate(-position.getX(),
+                -position.getY(), -position.getZ());
+        Matrix r = new Matrix(new double[][]{
+                {xAxis.getX(), xAxis.getY(), xAxis.getZ(), 0},
+                {yAxis.getX(), yAxis.getY(), yAxis.getZ(), 0},
+                {zAxis.getX(), zAxis.getY(), zAxis.getZ(), 0},
+                {0, 0, 0, 1}
+        });
+
+        VM1 = r.mult(t1);
+    }
+
+    public void initVM2() {
+
+        double sF = viewPortWidth / windowWidth;
+        double sY = viewPortHeight / windowHeight;
+
+        Matrix s = Transformations.scale(sF, -sY, 1);
+        Matrix t1 = Transformations.translate(-(left + (windowWidth / 2)),
+                -(bottom + (windowHeight / 2)), 0);
+        Matrix t2 = Transformations.translate((double) (viewPortWidth / 2) + 20, (double) (viewPortHeight
+                / 2) + 20, 0);
+
+        VM2 = t2.mult(s).mult(t1);
+    }
+
+
+    public void initTransformationMatrix() {
+        //total transformations matrix
+        setTT(new Matrix(4, 4));
+        //accumulated transformations matrix
+        setAT(new Matrix(4, 4));
+        //current transformation matrix
+        setCT(new Matrix(4, 4));
+        //projection matrix
+        setPro(new Matrix(new double[][]{
+                {1, 0, 0, 0},
+                {0, 1, 0, 0},
+                {0, 0, 0, 0},
+                {0, 0, 0, 1}
+        }));
+    }
+
+
+    public void setRotation(String axis) {
+        switch (axis) {
+            case "z":
+                rotation = zAxis;
+                break;
+            case "x":
+                rotation = xAxis;
+                break;
+            case "y":
+                rotation = yAxis;
+            default:
+                rotation = zAxis;
+        }
     }
 
     private void initView(String filename) {
@@ -60,7 +205,6 @@ public class View {
             }
         }
     }
-
 
     public Vector getPosition() {
         return position;

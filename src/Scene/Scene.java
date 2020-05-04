@@ -10,9 +10,9 @@ import java.util.List;
 import java.util.Map;
 
 public class Scene {
-    private List<Vertex> vertexList;
-    private List<Edge> EL;
-    private List<Pair<Integer, Integer>> edgesMap;
+    public static List<Vertex> vertexList;
+    public static List<Edge> EL;
+    public static List<Pair<Integer, Integer>> edgesMap;
 
     public Scene(String filename) {
         vertexList = new ArrayList<>();
@@ -100,7 +100,27 @@ public class Scene {
         return edgesMap;
     }
 
-    public void setEdgesMap(List<Pair<Integer, Integer>> edgesMap) {
-        this.edgesMap = edgesMap;
+    public static ArrayList<Edge> apply(Matrix transformation) {
+        ArrayList<Vertex> transformed = applyToVertex(transformation);
+
+        ArrayList<Edge> edges = new ArrayList<>();
+        for (Pair<Integer, Integer> pair : edgesMap) {
+            Vertex v0 = transformed.get(pair.getKey());
+            Vertex v1 = transformed.get(pair.getValue());
+            edges.add(new Edge(v0, v1));
+        }
+
+        return edges;
+
+    }
+
+    public static ArrayList<Vertex> applyToVertex(Matrix transformation) {
+        ArrayList<Vertex> vertices = new ArrayList<>();
+        int i = 0;
+        while (i < vertexList.size()) {
+            vertices.add(transformation.mult(vertexList.get(i)));
+            i++;
+        }
+        return vertices;
     }
 }

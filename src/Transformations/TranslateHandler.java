@@ -21,7 +21,7 @@ public class TranslateHandler implements TransformationHandler {
     public Matrix handle() {
         double widthRatio = view.getWindowWidth() / view.getViewPortWidth();
         double heightRatio = view.getWindowHeight() / view.getViewPortHeight();
-        return Transformation3D.translate((end.getX() - start.getX()) * widthRatio,
+        return Transformations.translate((end.getX() - start.getX()) * widthRatio,
                 (-(end.getY() - start.getY())) * heightRatio, 0).clone();
     }
 

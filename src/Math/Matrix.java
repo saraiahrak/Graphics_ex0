@@ -148,16 +148,6 @@ public class Matrix {
         this.matrix[row][col] = num;
     }
 
-    public ArrayList<Vertex> updateVertexList(List<Vertex> vertexList) {
-        ArrayList<Vertex> newVertexList = new ArrayList<>();
-        int i = 0;
-        while (i < vertexList.size()) {
-            newVertexList.add(this.mult(vertexList.get(i)));
-            i++;
-        }
-        return newVertexList;
-    }
-
     public Matrix clone() {
         double[][] matCopy = new double[rows][cols];
 
