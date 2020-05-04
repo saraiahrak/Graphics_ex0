@@ -33,8 +33,8 @@ public class MyCanvas extends Canvas implements MouseListener, MouseMotionListen
     public void initCanvas(String scn, String viw) {
         scene = new Scene(scn);
         view = new View(viw);
-        viewPortWidth = view.getViewPortWidth();
-        viewPortHeight = view.getViewPortHeight();
+        viewPortWidth = View.viewPortWidth;
+        viewPortHeight = View.viewPortHeight;
         painter = new Painter(viewPortWidth, viewPortHeight);
         windowWidth = viewPortWidth + 40;
         windowHeight = viewPortHeight + 40;
@@ -42,7 +42,7 @@ public class MyCanvas extends Canvas implements MouseListener, MouseMotionListen
         centerY = windowHeight / 2;
         shouldClip = false;
         bFlag = false;
-        setSize((int) this.windowWidth, (int) this.windowHeight);
+        setSize((int) windowWidth, (int) windowHeight);
         addMouseListener(this);
         addMouseMotionListener(this);
     }
@@ -55,13 +55,18 @@ public class MyCanvas extends Canvas implements MouseListener, MouseMotionListen
         return view;
     }
 
-    public void paint(Graphics g) {
-        view.setTT(view.getVM2().mult(view.getPro()).mult(view.getCT()).mult(view.getAT()).mult(view.getVM1()));
-        //draw the view window boundaries
+    private void drawBoundaries(Graphics g) {
         g.drawRect(20, 20, (int) viewPortWidth, (int) viewPortHeight);
+    }
 
+    private void setFinalTT() {
+        view.setTT(view.getVM2().mult(view.getPro()).mult(view.getCT()).mult(view.getAT()).mult(view.getVM1()));
+    }
+
+    public void paint(Graphics g) {
+        setFinalTT();
+        drawBoundaries(g);
         ArrayList<Edge> edges = Scene.apply(view.getTT());
-
         painter.paint(g, edges, shouldClip);
     }
 
@@ -86,7 +91,7 @@ public class MyCanvas extends Canvas implements MouseListener, MouseMotionListen
         // TODO Auto-generated method stub
         //convert the point to vector
         bFlag = true;
-        view.setAT(view.getCT().mult(view.getAT())) ;
+        view.setAT(view.getCT().mult(view.getAT()));
         view.setCT(new Matrix(4, 4));
         repaint();
     }

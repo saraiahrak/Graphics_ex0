@@ -1,5 +1,7 @@
 package World;
+
 import Math.*;
+
 public class Clip {
     enum Borders {
         LEFT, RIGHT, TOP, BOTTOM
@@ -92,8 +94,7 @@ public class Clip {
 
     }
 
-
-    public Edge clipLeft(Edge edge) {
+    private Edge clipLeft(Edge edge) {
         if (edge.isParallel(left)) {
             return null;
         }
@@ -105,7 +106,7 @@ public class Clip {
 
     }
 
-    public Edge clipTop(Edge edge) {
+    private Edge clipTop(Edge edge) {
         if (edge.isParallel(top)) {
             return null;
         }
@@ -120,7 +121,7 @@ public class Clip {
         return new Edge(intersection, edge.getP1());
     }
 
-    public Edge clipBottom(Edge edge) {
+    private Edge clipBottom(Edge edge) {
         if (edge.isParallel(bottom)) {
             return null;
         }
@@ -137,7 +138,7 @@ public class Clip {
 
     }
 
-    public Edge clipRight(Edge edge) {
+    private Edge clipRight(Edge edge) {
         if (edge.isParallel(right)) {
             return null;
         }
@@ -184,163 +185,4 @@ public class Clip {
         return borders;
     }
 
-//
-//    public Math.Edge clip(Math.Edge edge) {
-//        boolean in = true;
-//        boolean out = true;
-//
-//        double x1 = edge.getP0().getX();
-//        double y1 = edge.getP0().getY();
-//        double x2 = edge.getP1().getX();
-//        double y2 = edge.getP1().getY();
-//
-//        if (x1 < left.getP0().getX() || x2 < left.getP0().getX()) {
-//            in = false;
-//            Math.Vertex intersection = edge.intersectionWith(left);
-//            if (intersection != null) {
-//                out = false;
-//                if (x1 < this.left.getP0().getX()) {
-//                    x1 = intersection.getX();
-//                    y1 = intersection.getY();
-//                } else {
-//                    x2 = intersection.getX();
-//                    y2 = intersection.getY();
-//                }
-//            }
-//        }
-//        if (x1 > this.right.getP0().getX() || x2 > this.right.getP0().getX()) {
-//            in = false;
-//            Math.Vertex intersection = edge.intersectionWith(this.right);
-//            if (intersection != null) {
-//                out = false;
-//                if (x1 > this.right.getP0().getX()) {
-//                    x1 = intersection.getX();
-//                    y1 = intersection.getY();
-//                } else {
-//                    x2 = intersection.getX();
-//                    y2 = intersection.getY();
-//                }
-//            }
-//        }
-//        if (y1 < this.top.getP0().getY() || y2 < this.top.getP0().getY()) {
-//            in = false;
-//            Math.Vertex intersection = edge.intersectionWith(this.top);
-//            if (intersection != null) {
-//                out = false;
-//                if (y1 < this.top.getP0().getY()) {
-//                    x1 = intersection.getX();
-//                    y1 = intersection.getY();
-//                } else {
-//                    x2 = intersection.getX();
-//                    y2 = intersection.getY();
-//                }
-//            }
-//        }
-//
-//        if (y1 > this.bottom.getP0().getY() || y2 > this.bottom.getP0().getY()) {
-//            in = false;
-//            Math.Vertex intersection = edge.intersectionWith(this.bottom);
-//            if (intersection != null) {
-//                out = false;
-//                if (y1 > this.bottom.getP0().getY()) {
-//                    x1 = intersection.getX();
-//                    y1 = intersection.getY();
-//                } else {
-//                    x2 = intersection.getX();
-//                    y2 = intersection.getY();
-//                }
-//            }
-//        }
-//
-//        if (in) {
-//            return edge;
-//        }
-//
-//        if (out) {
-//            return null;
-//        }
-//
-//        return new Math.Edge(new Math.Vertex(x1, y1, 1), new Math.Vertex(x2, y2, 1));
-//
-//
-//    }
-
-//
-//    public Math.Edge clipLine(Math.Edge edge) {
-//        boolean in = true;
-//        boolean out = true;
-//
-//        double x1 = edge.getP0().getX();
-//        double y1 = edge.getP0().getY();
-//        double x2 = edge.getP1().getX();
-//        double y2 = edge.getP1().getY();
-//
-//        if (x1 < left.getP0().getX() || x2 < left.getP0().getX()) {
-//            in = false;
-//            Math.Point intersection = edge.intersectionWith(left);
-//            if (intersection != null) {
-//                out = false;
-//                if (x1 < this.left.getP0().getX()) {
-//                    x1 = intersection.getX();
-//                    y1 = intersection.getY();
-//                } else {
-//                    x2 = intersection.getX();
-//                    y2 = intersection.getY();
-//                }
-//            }
-//        }
-//        if (x1 > this.right.getP0().getX() || x2 > this.right.getP0().getX()) {
-//            in = false;
-//            Math.Point intersection = line.intersectionWith(this.right);
-//            if (intersection != null) {
-//                out = false;
-//                if (x1 > this.right.getP0().getX()) {
-//                    x1 = intersection.getX();
-//                    y1 = intersection.getY();
-//                } else {
-//                    x2 = intersection.getX();
-//                    y2 = intersection.getY();
-//                }
-//            }
-//        }
-//        if (y1 < this.top.getP0().getY() || y2 < this.top.getP0().getY()) {
-//            in = false;
-//            Math.Point intersection = line.intersectionWith(this.top);
-//            if (intersection != null) {
-//                out = false;
-//                if (y1 < this.top.getP0().getY()) {
-//                    x1 = intersection.getX();
-//                    y1 = intersection.getY();
-//                } else {
-//                    x2 = intersection.getX();
-//                    y2 = intersection.getY();
-//                }
-//            }
-//        }
-//
-//        if (y1 > this.bottom.getP0().getY() || y2 > this.bottom.getP0().getY()) {
-//            in = false;
-//            Math.Point intersection = line.intersectionWith(this.bottom);
-//            if (intersection != null) {
-//                out = false;
-//                if (y1 > this.bottom.getP0().getY()) {
-//                    x1 = intersection.getX();
-//                    y1 = intersection.getY();
-//                } else {
-//                    x2 = intersection.getX();
-//                    y2 = intersection.getY();
-//                }
-//            }
-//        }
-//
-//        if (in) {
-//            return line;
-//        }
-//
-//        if (out) {
-//            return null;
-//        }
-//
-//        return new Math.Line(x1, y1, 1, x2, y2, 1);
-//    }
 }

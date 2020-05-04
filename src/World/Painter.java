@@ -1,7 +1,5 @@
 package World;
 
-import Scene.*;
-import View.*;
 import Math.*;
 
 import java.awt.*;
