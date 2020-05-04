@@ -1,6 +1,7 @@
 package Transformations;
 
 import Math.*;
+import View.View;
 
 public class Transformations {
 
@@ -29,12 +30,44 @@ public class Transformations {
     }
 
     public static Matrix rotate(double theta) {
-        Matrix rotateMat = new Matrix(4, 4);
-        rotateMat.set(0, 0, Math.cos(theta));
-        rotateMat.set(2, 2, Math.cos(theta));
-        rotateMat.set(0, 2, (-Math.sin(theta)));
-        rotateMat.set(2, 0, Math.sin(theta));
-        return rotateMat;
+        String axis = View.rotation;
+        Matrix rotate;
+        switch (axis) {
+            case "x":
+                rotate = new Matrix(new double[][]{
+                        {1, 0, 0, 0},
+                        {0, Math.cos(theta), -Math.sin(theta), 0},
+                        {0, Math.sin(theta), Math.cos(theta), 0},
+                        {0, 0, 0, 1}
+                });
+                break;
+            case "y":
+                rotate = new Matrix(new double[][]{
+                        {Math.cos(theta), 0, Math.sin(theta), 0},
+                        {0, 1, 0, 0},
+                        {-Math.sin(theta), 0, Math.cos(theta), 0},
+                        {0, 0, 0, 1}
+                });
+                break;
+            case "z":
+                rotate = new Matrix(new double[][]{
+                        {Math.cos(theta), -Math.sin(theta), 0, 0},
+                        {Math.sin(theta), Math.cos(theta), 0, 0},
+                        {0, 0, 1, 0},
+                        {0, 0, 0, 1}
+                });
+                break;
+            default:
+                rotate = new Matrix(new double[][]{
+                        {Math.cos(theta), -Math.sin(theta), 0, 0},
+                        {Math.sin(theta), Math.cos(theta), 0, 0},
+                        {0, 0, 1, 0},
+                        {0, 0, 0, 1}
+                });
+                break;
+
+        }
+        return rotate;
     }
 
 }

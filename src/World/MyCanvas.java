@@ -20,10 +20,10 @@ public class MyCanvas extends Canvas implements MouseListener, MouseMotionListen
     private Painter painter;
     private View view;
     //private Matrix TT, VM1, VM2, AT, CT, Pro;
-    private Point pressed, current;
+    private Point pressed;
     private Vector xAxis, yAxis, zAxis;
     private boolean bFlag, shouldClip;
-    private double viewPortWidth, viewPortHeight, windowWidth, windowHeight, centerX, centerY;
+    private double viewPortWidth, viewPortHeight;
     private Vector rotation;
 
     public MyCanvas(String scn, String viw) {
@@ -36,13 +36,9 @@ public class MyCanvas extends Canvas implements MouseListener, MouseMotionListen
         viewPortWidth = View.viewPortWidth;
         viewPortHeight = View.viewPortHeight;
         painter = new Painter(viewPortWidth, viewPortHeight);
-        windowWidth = viewPortWidth + 40;
-        windowHeight = viewPortHeight + 40;
-        centerX = windowWidth / 2;
-        centerY = windowHeight / 2;
         shouldClip = false;
         bFlag = false;
-        setSize((int) windowWidth, (int) windowHeight);
+        setSize((int) viewPortWidth + 40, (int) viewPortHeight + 40);
         addMouseListener(this);
         addMouseMotionListener(this);
     }
@@ -97,7 +93,7 @@ public class MyCanvas extends Canvas implements MouseListener, MouseMotionListen
     }
 
     public void mouseDragged(MouseEvent arg0) {
-        current = arg0.getPoint();
+        Point current = arg0.getPoint();
         //convert the point to vector
         bFlag = true;
 

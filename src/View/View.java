@@ -19,8 +19,8 @@ public class View {
     public static double bottom;
     public static double windowWidth;
     public static double windowHeight;
+    public static String rotation;
     private Matrix TT, VM1, VM2, AT, CT, Pro;
-    private Vector rotation;
     private Vector xAxis;
     private Vector yAxis;
     private Vector zAxis;
@@ -32,7 +32,7 @@ public class View {
         initAxes();
         initVM1();
         initVM2();
-        rotation = zAxis;
+        rotation = "z";
     }
 
 
@@ -56,7 +56,7 @@ public class View {
         return VM2;
     }
 
-    public Vector getRotation() {
+    public String getRotation() {
         return rotation;
     }
 
@@ -156,18 +156,19 @@ public class View {
 
 
     public void setRotation(String axis) {
-        switch (axis) {
-            case "z":
-                rotation = zAxis;
-                break;
-            case "x":
-                rotation = xAxis;
-                break;
-            case "y":
-                rotation = yAxis;
-            default:
-                rotation = zAxis;
-        }
+//        switch (axis) {
+//            case "z":
+//                rotation = zAxis;
+//                break;
+//            case "x":
+//                rotation = xAxis;
+//                break;
+//            case "y":
+//                rotation = yAxis;
+//            default:
+//                rotation = zAxis;
+//        }
+        rotation = axis;
     }
 
     private void initView(String filename) {

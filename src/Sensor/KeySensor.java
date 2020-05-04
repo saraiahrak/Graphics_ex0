@@ -38,7 +38,12 @@ public class KeySensor implements KeyListener {
 
         if (e.getKeyChar() == 'x' || e.getKeyChar() == 'X') {
             myCanvas.getView().setRotation("x");
-            exit(0);
+        }
+        if (e.getKeyChar() == 'y' || e.getKeyChar() == 'Y') {
+            myCanvas.getView().setRotation("y");
+        }
+        if (e.getKeyChar() == 'z' || e.getKeyChar() == 'Z') {
+            myCanvas.getView().setRotation("z");
         }
 
         if (e.getKeyChar() == 'q' || e.getKeyChar() == 'Q') {

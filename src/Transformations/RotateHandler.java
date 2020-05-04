@@ -3,6 +3,7 @@ package Transformations;
 import Math.*;
 import Math.Matrix;
 import View.*;
+
 import java.awt.Point;
 
 public class RotateHandler implements TransformationHandler {
@@ -20,30 +21,21 @@ public class RotateHandler implements TransformationHandler {
     @Override
     public Matrix handle() {
 
-
-
+        double d = (view.getPosition().sub(view.getLookAt())).getSize();
         Matrix t1 = Transformations.translate(0, 0,
-                view.getPosition().getZ() - view.getLookAt().getZ());
+                d);
         Matrix t2 = Transformations.translate(0, 0,
-                view.getLookAt().getZ() - view.getPosition().getZ());
+                -d);
+        Point center = new Point(View.viewPortWidth / 2, View.viewPortHeight / 2);
+        Point dMinusC = new Point(end.x - center.x, end.y - center.y);
+        Point sMinusC = new Point(start.x - center.x, start.y - center.y);
 
-        Vector xAxis = new Vector(new double[]{1, 0, 0, 0});
-        Vector yAxis = new Vector(new double[]{0, 1, 0, 0});
-        Vector zAxis = new Vector(new double[]{0, 0, 1, 0});
+        double dAngle = Math.atan2(dMinusC.y, dMinusC.x);
+        double sAngle = Math.atan2(sMinusC.y, sMinusC.x);
+        double theta = dAngle - sAngle;
+        Matrix rotate = Transformations.rotate(theta);
 
-        Vector vEnd = new Vector(new double[]{end.getX(), end.getY(), 1, 1});
-        Vector vStart = new Vector(new double[]{start.getX(), start.getY(), 1, 1});
-        Vector vCenter = new Vector(new double[]{view.getWindowWidth() / 2, view.getWindowHeight() / 2, 1, 1});
-
-        Vector dv = vEnd.sub(vCenter);
-        Vector sv = vStart.sub(vCenter);
-        Matrix rotate;
-        //the transformation type is "rotate"
-        double dTheta = dv.getTheta(xAxis);
-        double sTheta = sv.getTheta(xAxis);
-        rotate = Transformations.rotate(dTheta - sTheta);
-        //update the current matrix
-        return t1.mult(rotate).mult(t2).clone();
+        return t2.mult(rotate).mult(t1).clone();
     }
 
 

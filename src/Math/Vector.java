@@ -13,7 +13,7 @@ public class Vector {
     }
     public Vector(double[] res) {
         this.vector = res;
-        this.dim = res.length + 1;
+        this.dim = res.length;
     }
 
     public Vector(int num) {
