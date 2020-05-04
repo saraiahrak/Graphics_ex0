@@ -27,11 +27,11 @@ public class RotateHandler implements TransformationHandler {
         Matrix t2 = Transformations.translate(0, 0,
                 -d);
         Point center = new Point(View.viewPortWidth / 2, View.viewPortHeight / 2);
-        Point dMinusC = new Point(end.x - center.x, end.y - center.y);
-        Point sMinusC = new Point(start.x - center.x, start.y - center.y);
+        Point ec = new Point(end.x - center.x, end.y - center.y);
+        Point sc = new Point(start.x - center.x, start.y - center.y);
 
-        double dAngle = Math.atan2(dMinusC.y, dMinusC.x);
-        double sAngle = Math.atan2(sMinusC.y, sMinusC.x);
+        double dAngle = Math.atan2(ec.y, ec.x);
+        double sAngle = Math.atan2(sc.y, sc.x);
         double theta = dAngle - sAngle;
         Matrix rotate = Transformations.rotate(theta);
 

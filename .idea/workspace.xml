@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7d74a40-7fc0-45e6-8fc8-341d9109c424" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ex0/Math/Vector.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/Math/Vector.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ex0/Sensor/KeySensor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/Sensor/KeySensor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ex0/Transformations/RotateHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/Transformations/RotateHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ex0/Transformations/Transformations.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/Transformations/Transformations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ex0/View/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/View/View.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ex0/World/MyCanvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/World/MyCanvas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Math/Vector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Math/Vector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sensor/KeySensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sensor/KeySensor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Transformations/RotateHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transformations/RotateHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transformations/Transformations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transformations/Transformations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transformations/TranslateHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transformations/TranslateHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/World/MyCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/MyCanvas.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Transformations/RotateHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="26" column="51" lean-forward="true" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+            <state relative-caret-position="223">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,7 +66,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/example3d.viw">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="100">
@@ -310,7 +297,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588624250616" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588624782548" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../‏‏Graphics_ex0 - עותק" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -402,7 +389,7 @@
     <frame x="1912" y="-8" width="2576" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10651828" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10651828" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -411,7 +398,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32827735" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32719395" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32719395" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -822,16 +809,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Transformations/RotateHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="26" column="51" lean-forward="true" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/View/View.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
@@ -848,6 +825,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Transformations/RotateHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
