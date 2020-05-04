@@ -1,3 +1,6 @@
+import Sensor.KeySensor;
+import World.MyCanvas;
+
 import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
