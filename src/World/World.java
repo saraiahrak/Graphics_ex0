@@ -13,7 +13,6 @@ public class World {
     private Frame frame;
 
     public World() {
-
         canvas = new MyCanvas("example3d.scn", "example3d.viw");
         frame = new Frame("Graphics");
         frame.add(canvas);
