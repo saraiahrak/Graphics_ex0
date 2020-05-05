@@ -32,7 +32,7 @@ public class KeySensor implements KeyListener {
 
         if (e.getKeyChar() == 'l' || e.getKeyChar() == 'L') {
             myCanvas.setCFlag(false);
-            myCanvas.getView().initTransformationMatrix();
+            new World();
             myCanvas.repaint();
         }
 
