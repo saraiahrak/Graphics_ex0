@@ -4,6 +4,11 @@ import World.*;
 
 import java.awt.*;
 
+/************************
+ * Dekel Yosef 315634071 *
+ * Sarai Ahrak 204894000 *
+ * *********************/
+
 
 /*************
  * Class Edge
@@ -36,6 +41,7 @@ public class Edge implements Drawable {
     /*********
      * Setters
      * *******/
+
 
     /**
      * SetVertexes

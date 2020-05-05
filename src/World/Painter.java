@@ -5,6 +5,17 @@ import Math.*;
 import java.awt.*;
 import java.util.List;
 
+
+
+/************************
+ * Dekel Yosef 315634071 *
+ * Sarai Ahrak 204894000 *
+ * *********************/
+
+
+/*****************
+ * Class Painter
+ * ***************/
 public class Painter {
     private Clip clip;
 

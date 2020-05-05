@@ -1,5 +1,14 @@
 package Math;
 
+/************************
+ * Dekel Yosef 315634071 *
+ * Sarai Ahrak 204894000 *
+ * *********************/
+
+
+/*************
+ * Class Vertex
+ * ***********/
 public class Vertex {
 
     private double x;
@@ -7,17 +16,21 @@ public class Vertex {
     private double z;
     private double w;
 
-//    public Math.Vertex(double x, double y) {
-//        this.x = x;
-//        this.y = y;
-//        this.z = 1;
-//    }
-    public Vertex(double x, double y, double z) {
-        this.x = x;
-        this.y = y;
-        this.z = z;
+
+    /*************
+     * Constructors
+     * ***********/
+    public Vertex(double xv, double yv, double zv) {
+        x = xv;
+        y = yv;
+        z = zv;
         w = 1;
     }
+
+
+    /*************
+     * Getters
+     * ***********/
 
     public double getX() {
         return x;
@@ -30,16 +43,36 @@ public class Vertex {
     public double getZ() {
         return z;
     }
+
     public double getW() {
         return w;
     }
 
+
+    /*************
+     * Methods
+     * ***********/
+
+    /**
+     * isEqual
+     * Compare two points
+     *
+     * @param p to compare
+     * @return true if equal, false otherwise
+     */
     public boolean isEqual(Vertex p) {
-        return p.getX() == this.getX() && p.getY() == this.getY();
+        return p.getX() == x && p.getY() == y;
     }
 
+    /**
+     * at
+     * value at position
+     *
+     * @param pos position
+     * @return value
+     */
     public double at(int pos) {
-        if (pos == 0){
+        if (pos == 0) {
             return x;
         }
         if (pos == 1) {
@@ -52,6 +85,12 @@ public class Vertex {
         }
     }
 
+    /**
+     * clone
+     * Deep copy vertex
+     *
+     * @return clone
+     */
     public Vertex clone() {
         return new Vertex(x, y, z);
     }

@@ -7,43 +7,69 @@ import java.awt.event.KeyListener;
 
 import static java.lang.System.exit;
 
-public class KeySensor implements KeyListener {
-    private MyCanvas myCanvas;
 
-    public KeySensor(MyCanvas canvas) {
-        this.myCanvas = canvas;
+/************************
+ * Dekel Yosef 315634071 *
+ * Sarai Ahrak 204894000 *
+ * *********************/
+
+
+/*****************
+ * Class KeySensor
+ * ***************/
+public class KeySensor implements KeyListener {
+
+    private MyCanvas canvas;
+
+    /*****************
+     * Constructor
+     * ***************/
+    public KeySensor(MyCanvas myCanvas) {
+        canvas = myCanvas;
     }
+
+    /*********
+     * Events
+     * ********/
+
+
+    /**
+     * keyPressed
+     * Key pressed event
+     *
+     * @param e KeyEvent
+     */
 
     public void keyPressed(KeyEvent e) {
         if (e.getKeyChar() == 'c' || e.getKeyChar() == 'C') {
-            if (myCanvas.getCFlag()) {
-                myCanvas.setCFlag(false);
+            if (canvas.shouldClip()) {
+                canvas.setShouldClip(false);
             } else {
-                myCanvas.setCFlag(true);
+                canvas.setShouldClip(true);
             }
-            myCanvas.repaint();
+            canvas.repaint();
         }
 
         if (e.getKeyChar() == 'r' || e.getKeyChar() == 'R') {
-            myCanvas.setCFlag(false);
-            myCanvas.getView().initTransformationMatrix();
-            myCanvas.repaint();
+            canvas.setShouldClip(false);
+            canvas.getView().initTransformationMatrix();
+            canvas.repaint();
         }
 
         if (e.getKeyChar() == 'l' || e.getKeyChar() == 'L') {
-            myCanvas.setCFlag(false);
+            canvas.setShouldClip(false);
             new World();
-            myCanvas.repaint();
+            canvas.repaint();
         }
 
         if (e.getKeyChar() == 'x' || e.getKeyChar() == 'X') {
-            myCanvas.getView().setRotation("x");
+            canvas.getView().setRotation("x");
         }
         if (e.getKeyChar() == 'y' || e.getKeyChar() == 'Y') {
-            myCanvas.getView().setRotation("y");
+            canvas.getView().setRotation("y");
         }
         if (e.getKeyChar() == 'z' || e.getKeyChar() == 'Z') {
-            myCanvas.getView().setRotation("z");
+            canvas.getView().setRotation("z");
         }
 
         if (e.getKeyChar() == 'q' || e.getKeyChar() == 'Q') {
