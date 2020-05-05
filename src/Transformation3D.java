@@ -44,6 +44,3 @@ public class Transformation3D {
         this.type = t;
     }
 }
-
-
-
