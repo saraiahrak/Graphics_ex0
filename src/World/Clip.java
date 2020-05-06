@@ -2,6 +2,16 @@ package World;
 
 import Math.*;
 
+/************************
+ * Dekel Yosef 315634071 *
+ * Sarai Ahrak 204894000 *
+ * *********************/
+
+
+/****************
+ * Class Clip
+ * **************/
+
 public class Clip {
     enum Borders {
         LEFT, RIGHT, TOP, BOTTOM
@@ -13,6 +23,10 @@ public class Clip {
     private Edge top;
 
 
+    /**************
+     * Constructor
+     * ************/
+
     public Clip(double width, double height) {
         left = new Edge(new Vertex(20, 20, 1), new Vertex(20, height + 20, 1));
         right = new Edge(new Vertex(width + 20, 20, 1), new Vertex(width + 20, height + 20, 1));
@@ -20,6 +34,19 @@ public class Clip {
         bottom = new Edge(new Vertex(20, height + 20, 1), new Vertex(width + 20, height + 20, 1));
     }
 
+
+    /***********
+     * Methods
+     * *********/
+
+
+    /**
+     * clip
+     * clip edge according to borders
+     *
+     * @param edge to clip
+     * @return clipped edge
+     */
     public Edge clip(Edge edge) {
         double x1 = edge.getP0().getX();
         double y1 = edge.getP0().getY();
@@ -67,6 +94,13 @@ public class Clip {
 
     }
 
+    /**
+     * allOut
+     * check if edge is all out
+     *
+     * @param edge to clip
+     * @return true if out of bounds, false otherwise
+     */
     private boolean allOut(Edge edge) {
         double x1 = edge.getP0().getX();
         double y1 = edge.getP0().getY();
@@ -80,6 +114,13 @@ public class Clip {
         return ((x1 < leftX && x2 < leftX) || (x2 > rightX && x1 > rightX) || (y1 < upY && y2 < upY) || (y1 > downY && y2 > downY));
     }
 
+    /**
+     * allIn
+     * check if edge is all in
+     *
+     * @param edge to clip
+     * @return true if in of bounds, false otherwise
+     */
     private boolean allIn(Edge edge) {
         double x1 = edge.getP0().getX();
         double y1 = edge.getP0().getY();
@@ -94,6 +135,13 @@ public class Clip {
 
     }
 
+    /**
+     * clipLeft
+     * clip edge according to left border
+     *
+     * @param edge to clip
+     * @return clipped edge
+     */
     private Edge clipLeft(Edge edge) {
         if (edge.isParallel(left)) {
             return null;
@@ -106,6 +154,14 @@ public class Clip {
 
     }
 
+
+    /**
+     * clipTop
+     * clip edge according to top border
+     *
+     * @param edge to clip
+     * @return clipped edge
+     */
     private Edge clipTop(Edge edge) {
         if (edge.isParallel(top)) {
             return null;
@@ -121,6 +177,14 @@ public class Clip {
         return new Edge(intersection, edge.getP1());
     }
 
+
+    /**
+     * clipBottom
+     * clip edge according to bottom border
+     *
+     * @param edge to clip
+     * @return clipped edge
+     */
     private Edge clipBottom(Edge edge) {
         if (edge.isParallel(bottom)) {
             return null;
@@ -138,6 +202,14 @@ public class Clip {
 
     }
 
+
+    /**
+     * clipRight
+     * clip edge according to right border
+     *
+     * @param edge to clip
+     * @return clipped edge
+     */
     private Edge clipRight(Edge edge) {
         if (edge.isParallel(right)) {
             return null;
@@ -150,6 +222,14 @@ public class Clip {
         return new Edge(edge.getP0(), intersection);
     }
 
+
+    /**
+     * getBorders
+     * get borders the edge intersects with
+     *
+     * @param edge to clip
+     * @return array of borders
+     */
     private Borders[] getBorders(Edge edge) {
         Borders[] borders = new Borders[4];
         int size = 0;

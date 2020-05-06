@@ -3,6 +3,55 @@
   <component name="ChangeListManager">
     <list default="true" id="f7d74a40-7fc0-45e6-8fc8-341d9109c424" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example3d.viw" beforeDir="false" afterPath="$PROJECT_DIR$/ex1.viw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ex0/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ex0/Math/Edge.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/Math/Edge.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ex0/Math/Line.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ex0/Math/Matrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/Math/Matrix.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ex0/Math/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/Math/Point.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ex0/Math/Vector.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/Math/Vector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ex0/Math/Vertex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/Math/Vertex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ex0/Scene/Scene.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/Scene/Scene.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ex0/Sensor/KeySensor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/Sensor/KeySensor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ex0/Transformations/RotateHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/Transformations/RotateHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ex0/Transformations/ScaleHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/Transformations/ScaleHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ex0/Transformations/TransformationFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/Transformations/TransformationFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ex0/Transformations/Transformations.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/Transformations/Transformations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ex0/Transformations/TranslateHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/Transformations/TranslateHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ex0/Utils/Reader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/Utils/Reader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ex0/Utils/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/Utils/Utils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ex0/View/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/View/View.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ex0/World/Clip$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/World/Clip$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ex0/World/Clip$Borders.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/World/Clip$Borders.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ex0/World/Clip.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/World/Clip.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ex0/World/MyCanvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/World/MyCanvas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ex0/World/Painter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/World/Painter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ex0/World/World$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/World/World$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ex0/World/World.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/World/World.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Math/Edge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Math/Edge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Math/Line.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Math/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Math/Matrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Math/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Math/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Math/Vector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Math/Vector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Math/Vertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Math/Vertex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scene/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scene/Scene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sensor/KeySensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sensor/KeySensor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transformations/RotateHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transformations/RotateHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transformations/ScaleHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transformations/ScaleHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transformations/TransformationFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transformations/TransformationFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transformations/TransformationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transformations/TransformationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transformations/Transformations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transformations/Transformations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transformations/TranslateHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transformations/TranslateHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/World/Clip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/Clip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/World/Drawable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/Drawable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/World/MyCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/MyCanvas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/World/Painter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/Painter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/World/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/World.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star3d.scn" beforeDir="false" afterPath="$PROJECT_DIR$/ex1.scn" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,15 +84,16 @@
       <find>AT =</find>
       <find>vertexList</find>
       <find>CT =</find>
+      <find>new Line</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1912" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1296" />
+    <option name="width" value="976" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectId" id="1bAC5fKghIOSpIlnLbL4jxLLDr2" />
@@ -58,7 +108,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588629876887" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588705624429" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../‏‏Graphics_ex0 - עותק" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -155,22 +205,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="396" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1588088012495" />
-    <state width="1237" height="204" key="GridCell.Tab.0.bottom" timestamp="1588667503772">
+    <state width="1237" height="162" key="GridCell.Tab.0.bottom" timestamp="1588754094480">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588667503772" />
-    <state width="1237" height="204" key="GridCell.Tab.0.center" timestamp="1588667503772">
+    <state width="1237" height="162" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588754094480" />
+    <state width="1237" height="162" key="GridCell.Tab.0.center" timestamp="1588754094480">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1588667503772" />
-    <state width="1237" height="204" key="GridCell.Tab.0.left" timestamp="1588667503772">
+    <state width="1237" height="162" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1588754094480" />
+    <state width="1237" height="162" key="GridCell.Tab.0.left" timestamp="1588754094480">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1588667503772" />
-    <state width="1237" height="204" key="GridCell.Tab.0.right" timestamp="1588667503772">
+    <state width="1237" height="162" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1588754094480" />
+    <state width="1237" height="162" key="GridCell.Tab.0.right" timestamp="1588754094480">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1588667503772" />
+    <state width="1237" height="162" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1588754094480" />
     <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1588667503772">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

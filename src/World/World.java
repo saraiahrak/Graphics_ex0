@@ -8,16 +8,26 @@ import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
+
+/************************
+ * Dekel Yosef 315634071 *
+ * Sarai Ahrak 204894000 *
+ * *********************/
+
+
+/*****************
+ * Class World
+ * ***************/
 public class World {
     private MyCanvas canvas;
     private Frame frame;
 
     public World() {
-        canvas = new MyCanvas("example3d.scn", "example3d.viw");
+        canvas = new MyCanvas("ex1.scn", "ex1.viw");
         frame = new Frame("Graphics");
         frame.add(canvas);
         canvas.addKeyListener(new KeySensor(canvas));
-        WindowAdapter myWindowAdapter = new WindowAdapter(){
+        WindowAdapter myWindowAdapter = new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
                 System.exit(0);
             }

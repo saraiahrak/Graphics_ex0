@@ -3,8 +3,28 @@ package Transformations;
 import Math.*;
 import View.View;
 
+
+/************************
+ * Dekel Yosef 315634071 *
+ * Sarai Ahrak 204894000 *
+ * *********************/
+
+
+/***********************
+ * Class Transformations
+ * *********************/
+
 public class Transformations {
 
+    /**
+     * translate
+     * create translate matrix
+     *
+     * @param dx dx
+     * @param dy dy
+     * @param dz dz
+     * @return translate matrix
+     */
     public static Matrix translate(double dx, double dy, double dz) {
         Matrix transMat = new Matrix(4, 4);
         transMat.set(0, 3, dx);
@@ -13,6 +33,15 @@ public class Transformations {
         return transMat;
     }
 
+    /**
+     * scale
+     * create scale matrix
+     *
+     * @param sx sx
+     * @param sy sy
+     * @param sz sz
+     * @return scale matrix
+     */
     public static Matrix scale(double sx, double sy, double sz) {
         Matrix scaleMat = new Matrix(4, 4);
         scaleMat.set(0, 0, sx);
@@ -21,6 +50,14 @@ public class Transformations {
         return scaleMat;
     }
 
+
+    /**
+     * scale
+     * create scale matrix
+     *
+     * @param sF scale factor
+     * @return scale matrix
+     */
     public static Matrix scale(double sF) {
         Matrix scaleMat = new Matrix(4, 4);
         scaleMat.set(0, 0, sF);
@@ -29,6 +66,14 @@ public class Transformations {
         return scaleMat;
     }
 
+
+    /**
+     * rotate
+     * create rotate matrix relative to axis
+     *
+     * @param theta angle
+     * @return rotate matrix
+     */
     public static Matrix rotate(double theta) {
         String axis = View.rotation;
         Matrix rotate;

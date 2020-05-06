@@ -11,24 +11,80 @@ import java.awt.Point;
 import java.awt.event.*;
 import java.util.ArrayList;
 
+
+/************************
+ * Dekel Yosef 315634071 *
+ * Sarai Ahrak 204894000 *
+ * *********************/
+
+
+/*****************
+ * Class MyCanvas
+ * ***************/
+
 public class MyCanvas extends Canvas implements MouseListener, MouseMotionListener {
-    /**
-     *
-     */
+
     private static final long serialVersionUID = 1L;
     private Scene scene;
     private Painter painter;
     private View view;
-    //private Matrix TT, VM1, VM2, AT, CT, Pro;
     private Point pressed;
-    private Vector xAxis, yAxis, zAxis;
     private boolean bFlag, shouldClip;
     private double viewPortWidth, viewPortHeight;
     private Vector rotation;
 
+
+    /**************
+     * Constructor
+     * ************/
     public MyCanvas(String scn, String viw) {
         initCanvas(scn, viw);
     }
+
+
+    /**********
+     * Getters
+     * ********/
+
+    public Scene getScene() {
+        return scene;
+    }
+
+    public View getView() {
+        return view;
+    }
+
+
+    public boolean shouldClip() {
+        return shouldClip;
+    }
+
+    /**********
+     * Setters
+     * ********/
+
+
+    public void setShouldClip(Boolean clip) {
+        this.shouldClip = clip;
+    }
+
+    private void setFinalTT() {
+        view.setTT(view.getVM2().mult(view.getPro()).mult(view.getCT()).mult(view.getAT()).mult(view.getVM1()));
+    }
+
+
+    /**********
+     * Methods
+     * ********/
+
+    /**
+     * initCanvas
+     * initialize members
+     *
+     * @param scn scene file name
+     * @param viw view file name
+     */
+
 
     public void initCanvas(String scn, String viw) {
         scene = new Scene(scn);
@@ -43,22 +99,23 @@ public class MyCanvas extends Canvas implements MouseListener, MouseMotionListen
         addMouseMotionListener(this);
     }
 
-    public Scene getScene() {
-        return scene;
-    }
 
-    public View getView() {
-        return view;
-    }
-
+    /**
+     * drawBoundaries
+     * draw canvas boundaries
+     *
+     * @param g graphics
+     */
     private void drawBoundaries(Graphics g) {
         g.drawRect(20, 20, (int) viewPortWidth, (int) viewPortHeight);
     }
 
-    private void setFinalTT() {
-        view.setTT(view.getVM2().mult(view.getPro()).mult(view.getCT()).mult(view.getAT()).mult(view.getVM1()));
-    }
-
+    /**
+     * paint
+     * draw canvas drawables
+     *
+     * @param g graphics
+     */
     public void paint(Graphics g) {
         setFinalTT();
         drawBoundaries(g);
@@ -66,13 +123,12 @@ public class MyCanvas extends Canvas implements MouseListener, MouseMotionListen
         painter.paint(g, edges, shouldClip);
     }
 
-    public boolean getCFlag() {
-        return this.shouldClip;
-    }
 
-    public void setCFlag(Boolean bool) {
-        this.shouldClip = bool;
-    }
+
+
+    /**********
+     * Events
+     * ********/
 
     public void mouseClicked(MouseEvent arg0) {
         // TODO Auto-generated method stub

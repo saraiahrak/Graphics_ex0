@@ -1,69 +1,77 @@
 package Math;
 
+
+/************************
+ * Dekel Yosef 315634071 *
+ * Sarai Ahrak 204894000 *
+ * *********************/
+
+
+/*************
+ * Class Point
+ * ***********/
 public class Point {
     private double x;
     private double y;
-    /**
-     * Construct a point given x and y coordinates.
-     *
-     * @param x - the x coordinate
-     * @param y - the y coordinate
-     */
-    public Point(double x, double y) {
-        this.x = x;
-        this.y = y;
+
+
+    /*************
+     * Constructors
+     * ***********/
+
+    public Point(double xp, double yp) {
+        x = xp;
+        y = yp;
     }
-    /**
-     * Construct a point.
-     *
-     * @param p - the x and y coordinates of the point
-     */
+
     public Point(Point p) {
-        this.x = p.getX();
-        this.y = p.getY();
+        x = p.getX();
+        y = p.getY();
     }
-    /**
-     * @return the x coordinate
-     */
+
+    /*************
+     * Getters
+     * ***********/
+
     public double getX() {
-        return this.x;
+        return x;
     }
-    /**
-     * @return the y coordinate
-     */
+
     public double getY() {
-        return this.y;
+        return y;
     }
+
+
+    /*************
+     * Methods
+     * ***********/
+
     /**
-     * Checks if the points are equals.
+     * isEqual
+     * Compare two points
      *
-     * @param other - a point to compare
-     *
-     * @return true if the points are equal, false otherwise
+     * @param other to compare
+     * @return true if equal, false otherwise
      */
-    public boolean equals(Point other) {
-        if (other.getX() == this.x) {
-            if (other.getY() == this.y) {
-                return true;
-            }
-        }
-        return false;
+    public boolean isEqual(Point other) {
+        return x == other.x && y == other.y;
     }
+
     /**
-     * Calculate the distance between two points.
+     * distance
+     * Calculate distance between two points
      *
-     * @param other - a point to measure the distance to
-     *
+     * @param other to find distance
      * @return the distance of this point to the other point
      */
     public double distance(Point other) {
-        if (this.equals(other)) {
+        if (this.isEqual(other)) {
             return 0;
         }
-        double xDistance = (this.x - other.x) * (this.x - other.x);
-        double yDistance = (this.y - other.y) * (this.y - other.y);
-        double result = xDistance + yDistance;
-        double distance = Math.sqrt(result);
-        return distance;
+
+        double dx = (x - other.x) * (x - other.x);
+        double dy = (y - other.y) * (y - other.y);
+
+        return Math.sqrt(dx + dy);
     }
 }

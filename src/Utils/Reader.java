@@ -5,10 +5,27 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
+
+/************************
+ * Dekel Yosef 315634071 *
+ * Sarai Ahrak 204894000 *
+ * *********************/
+
+
+/****************
+ * Class Reader
+ * **************/
 public class Reader {
 
     public Reader() {}
 
+    /**
+     * readLines
+     * Parse file into array of lines
+     *
+     * @param filename file name
+     * @return array of lines
+     */
     public static ArrayList<String> readLines(String filename) {
         ArrayList<String> arr = new ArrayList<>();
 
