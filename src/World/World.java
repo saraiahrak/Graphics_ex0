@@ -23,7 +23,7 @@ public class World {
     private Frame frame;
 
     public World() {
-        canvas = new MyCanvas("star3d.scn", "example3d.viw");
+        canvas = new MyCanvas("ex1.scn", "ex1.viw");
         frame = new Frame("Graphics");
         frame.add(canvas);
         canvas.addKeyListener(new KeySensor(canvas));
