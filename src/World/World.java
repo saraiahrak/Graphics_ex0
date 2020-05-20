@@ -1,8 +1,6 @@
 package World;
 
-import Scene.*;
 import Sensor.KeySensor;
-import View.*;
 
 import java.awt.*;
 import java.awt.event.WindowAdapter;
@@ -23,7 +21,7 @@ public class World {
     private Frame frame;
 
     public World() {
-        canvas = new MyCanvas("ex1.scn", "ex1.viw");
+        canvas = new MyCanvas("resources/ex1.scn", "resources/ex1.viw");
         frame = new Frame("Graphics");
         frame.add(canvas);
         canvas.addKeyListener(new KeySensor(canvas));

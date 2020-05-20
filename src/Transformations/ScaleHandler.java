@@ -1,9 +1,9 @@
 package Transformations;
 
-import View.*;
-import Math.*;
+import Math.Matrix;
+import View.View;
 
-import java.awt.Point;
+import java.awt.*;
 
 
 /************************

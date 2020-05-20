@@ -1,8 +1,10 @@
 package View;
 
+import Math.Matrix;
+import Math.Vector;
 import Transformations.Transformations;
-import Math.*;
-import Utils.*;
+import Utils.Reader;
+import Utils.Utils;
 
 import java.util.ArrayList;
 

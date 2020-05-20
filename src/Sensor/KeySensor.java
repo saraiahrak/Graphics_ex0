@@ -1,6 +1,7 @@
 package Sensor;
 
-import World.*;
+import World.MyCanvas;
+import World.World;
 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;

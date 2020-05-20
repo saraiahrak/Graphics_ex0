@@ -1,14 +1,17 @@
 package World;
 
-import Scene.*;
-import Transformations.*;
-import View.*;
-import Math.*;
+import Math.Edge;
+import Math.Matrix;
+import Math.Vector;
+import Scene.Scene;
+import Transformations.TransformationFactory;
+import Transformations.TransformationHandler;
+import View.View;
 
-import java.awt.Canvas;
-import java.awt.Graphics;
-import java.awt.Point;
-import java.awt.event.*;
+import java.awt.*;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.awt.event.MouseMotionListener;
 import java.util.ArrayList;
 
 

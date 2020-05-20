@@ -1,9 +1,9 @@
 package Transformations;
 
 import Math.Matrix;
-import View.*;
+import View.View;
 
-import java.awt.Point;
+import java.awt.*;
 
 /************************
  * Dekel Yosef 315634071 *

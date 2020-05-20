@@ -1,6 +1,7 @@
 package World;
 
-import Math.*;
+import Math.Edge;
+import Math.Vertex;
 
 /************************
  * Dekel Yosef 315634071 *
