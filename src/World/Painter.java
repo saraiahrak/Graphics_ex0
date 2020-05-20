@@ -1,6 +1,6 @@
 package World;
 
-import Math.*;
+import Math.Edge;
 
 import java.awt.*;
 import java.util.List;

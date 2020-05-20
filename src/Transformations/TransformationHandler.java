@@ -1,5 +1,6 @@
 package Transformations;
-import Math.*;
+
+import Math.Matrix;
 
 /************************
  * Dekel Yosef 315634071 *

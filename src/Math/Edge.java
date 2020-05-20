@@ -1,6 +1,6 @@
 package Math;
 
-import World.*;
+import World.Drawable;
 
 import java.awt.*;
 

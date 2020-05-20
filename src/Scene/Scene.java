@@ -1,7 +1,9 @@
 package Scene;
 
-import Math.*;
-import Utils.*;
+import Math.Edge;
+import Math.Matrix;
+import Math.Vertex;
+import Utils.Reader;
 import javafx.util.Pair;
 
 import java.util.ArrayList;

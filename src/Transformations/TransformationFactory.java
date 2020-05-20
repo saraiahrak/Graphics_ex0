@@ -1,7 +1,8 @@
 package Transformations;
 
-import View.*;
-import java.awt.Point;
+import View.View;
+
+import java.awt.*;
 
 
 /************************
