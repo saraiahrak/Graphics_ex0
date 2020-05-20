@@ -8,24 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f7d74a40-7fc0-45e6-8fc8-341d9109c424" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex1.scn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex1.viw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example3d.scn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ex0/World/World.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex0/World/World.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Math/Edge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Math/Edge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Scene/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scene/Scene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sensor/KeySensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sensor/KeySensor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transformations/RotateHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transformations/RotateHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transformations/ScaleHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transformations/ScaleHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transformations/TransformationFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transformations/TransformationFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transformations/TransformationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transformations/TransformationHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transformations/Transformations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transformations/Transformations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transformations/TranslateHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transformations/TranslateHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/World/Clip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/Clip.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/World/MyCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/MyCanvas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/World/Painter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/Painter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/World/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/World.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,8 +41,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+            <state relative-caret-position="348">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/demo1/Demo1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+              <folding>
+                <element signature="e#780#1300#0" expanded="true" />
+                <element signature="e#1299#1300#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -77,16 +73,16 @@
         <entry file="file://$PROJECT_DIR$/out/production/ex0/META-INF/MANIFEST.MF">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="519" column="39" lean-forward="true" selection-start-line="519" selection-start-column="39" selection-end-line="519" selection-end-column="39" />
+            <state relative-caret-position="425">
+              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -109,8 +105,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -138,13 +134,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/demo1/demo1.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="976" />
+    <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectId" id="1bAC5fKghIOSpIlnLbL4jxLLDr2" />
@@ -166,18 +164,7 @@
             <path>
               <item name="ex0" type="b2602c69:ProjectViewProjectNode" />
               <item name="ex0" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ex0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ex0" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ex0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ex0" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ex0" type="b2602c69:ProjectViewProjectNode" />
@@ -188,6 +175,12 @@
               <item name="ex0" type="b2602c69:ProjectViewProjectNode" />
               <item name="ex0" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ex0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ex0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="demo1" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -205,9 +198,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589955662531" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../‏‏Graphics_ex0 - עותק" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589958025304" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="org.infernus.idea.checkstyle.CheckStyleConfigurable" />
@@ -221,6 +214,7 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sarai\IdeaProjects\ex0\libs" />
       <recent name="C:\Users\sarai\IdeaProjects\ex0" />
       <recent name="C:\Users\user\IdeaProjects\Graphics_ex0" />
       <recent name="C:\Users\user\IdeaProjects\Graphics_ex0\src" />
@@ -438,14 +432,32 @@
     <entry file="file://$PROJECT_DIR$/out/production/ex0/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="519" column="39" lean-forward="true" selection-start-line="519" selection-start-column="39" selection-end-line="519" selection-end-column="39" />
+        <state relative-caret-position="425">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/demo1/Demo1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+          <folding>
+            <element signature="e#780#1300#0" expanded="true" />
+            <element signature="e#1299#1300#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -508,7 +520,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -516,6 +527,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>libs</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
