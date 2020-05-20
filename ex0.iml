@@ -12,14 +12,11 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/biuoop-1.4.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
+    <orderEntry type="library" name="libs" level="project" />
+    <orderEntry type="library" name="gluegen-rt" level="project" />
+    <orderEntry type="library" name="gluegen" level="project" />
+    <orderEntry type="library" name="jogl-all-natives-windows-amd64" level="project" />
+    <orderEntry type="library" name="jogl-all" level="project" />
+    <orderEntry type="library" name="libs1" level="project" />
   </component>
 </module>
