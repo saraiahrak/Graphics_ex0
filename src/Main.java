@@ -1,4 +1,5 @@
 import World.World;
+import demo1.Demo1;
 
 
 /************************
@@ -17,8 +18,11 @@ public class Main {
      * @param args
      */
     public static void main(String[] args) {
+
+        Demo1.main(args);
         // TODO Auto-generated method stub
-        World world = new World();
-        world.show();
+//
+//        World world = new World();
+//        world.show();
     }
 }
